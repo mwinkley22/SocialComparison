@@ -1,15 +1,5 @@
-~~~~
-*STATA/SE 18.0
-*Author: Myles Winkleyu
-*Title: Envy_Summarize_Oct2.do
-*Compiling Envy studies and results up to 10/2/2024
-~~~~
-
-
-
-<<dd_do: quietly>>
 *Importing and cleaning the results for "Envy 2 V11"*
-cd "C:\Users\winkley\Documents\Social Comparison\Social Comparison Summary"
+cd ..
 import excel using ".\Raw Excel Files\Envy+2+V11_October+2,+2024_13.45.xlsx", firstrow clear
 
 destring Progress, force replace
@@ -35,6 +25,8 @@ foreach arg of local select_vars {
 }
 keep `select_vars' PROLIFIC_PID
 
+
+*Envy 2 V11 Variable Labels
 label variable WTP "# of tasks subject would be willing to do to receive favorite painting"
 label variable HEL "Envy Level w/ higher WTP received painting for free on a scale of 1-10"
 label variable LEL "Envy Level w/ lower WTP received painting for free on a scale of 1-10"
@@ -46,13 +38,39 @@ label variable WTP_high "WTP of High WTP participant"
 label variable WTP_low "WTP of Low WTP participant"
 
 
+
+gen destroy_var = DPH
+replace destroy_var = DPL if missing(DPH)
+
+gen destroy_dummy = 1 if !missing(DPH)
+replace destroy_dummy=0 if missing(destroy_dummy)
+
+gen destroy_v_dum = destroy_var*destroy_dummy
+
+
+gen envy_var = HEL
+replace envy_var = LEL
+
+gen envy_dummy = 1 if !missing(HEL)
+replace envy_dummy = 0 if missing(envy_dummy)
+
+gen envy_v_dum = envy_var*envy_dummy
+
+label variable destroy_var "WTP to Prevent, both treatments"
+label variable destroy_dummy "1 if High treatment, 0 if Low"
+label variable destroy_v_dum "destroy_var*destroy_dummy"
+
+label variable envy_var "Envy, both treatments"
+label variable envy_dummy "1 if High treatment, 0 if Low"
+label variable envy_v_dum "envy_var*envy_dummy"
+
+
 save ".\Clean STATA Files\Envy_2_V11_clean.dta",replace
-<</dd_do>>
 
 
+log using "summarylog.scml", replace
 
-~~~~
-
+/*
 Envy 2 V11:
 
 Key variation: eliciting WTP to prevent a random participant from receiving the painting **following** a High/Low WTP participant receiving your favorite painting.
@@ -62,12 +80,20 @@ Rank of Prevented Painting: Second Favorite
 Within/Between: Between
 
 Summary Statistics for Envy 2 V11:
-<<dd_do:nocommand>>
+*/
 
 describe, full
 tabstat `select_vars', stats(mean sd min max n) columns(var)
-<</dd_do>>
-~~~~
+
+
+
+
+
+reg destroy_var envy_dummy envy_var envy_v_dum
+reg destroy_var envy_dummy envy_var envy_v_dum WTP
+
+
+log off
 
 
 
@@ -76,9 +102,7 @@ tabstat `select_vars', stats(mean sd min max n) columns(var)
 
 
 
-<<dd_do: quietly>>
 *Importing and cleaning the results for "Envy 2 V10"*
-cd "C:\Users\winkley\Documents\Social Comparison\Social Comparison Summary"
 import excel using ".\Raw Excel Files\Envy+2+V10_October+2,+2024_14.24.xlsx", firstrow clear
 
 destring Progress, force replace
@@ -116,30 +140,33 @@ label variable WTP_low "WTP of Low WTP participant"
 
 
 save ".\Clean STATA Files\Envy_2_V11_clean.dta",replace
-<</dd_do>>
 
 
+log on 
+/*
+Envy 2 V10:
 
-~~~~
-
-Envy 2 V10: How much
-
-Key variation: eliciting WTP to prevent High/Low WTP participant receiving your second favorite painting **following** them already having received your favorite
+Key variation: eliciting WTP to prevent High/Low WTP participant receiving your second favorite painting **following** them already having received your favorite. Your second favorite painting is rated highly by *both* participants
 
 Rank of Prevented Painting: Second Favorite
 
 Within/Between: Between
 
 Summary Statistics for Envy 2 V10:
-<<dd_do:nocommand>>
+*/
 
 describe, full
 tabstat `select_vars', stats(mean sd min max n) columns(var)
-<</dd_do>>
-~~~~
 
-<<dd_do>>
-ttest HEL
+log close
+
+
+
+
+
+
+
+
 
 
 

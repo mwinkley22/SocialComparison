@@ -1,109 +1,107 @@
-<pre><code>*STATA/SE 18.0
-*Author: Myles Winkleyu
-*Title: Envy_Summarize_Oct2.do
-*Compiling Envy studies and results up to 10/2/2024
-</code></pre>
+<p>begin</p>
+<p>Envy 2 V11:</p>
+<p>Key variation: eliciting WTP to prevent a random participant from receiving the painting <strong>following</strong> a High/Low WTP participant receiving your favorite painting.</p>
+<p>Rank of Prevented Painting: Second Favorite</p>
+<p>Within/Between: Between</p>
+<p>Summary Statistics for Envy 2 V11:</p>
 <pre><code>
-Envy 2 V11:
-
-Key variation: eliciting WTP to prevent a random participant from receiving the painting **following** a High/Low WTP participant receiving your favorite painting.
-
-
-
-Summary Statistics for Envy 2 V11:
-
 Contains data from .\Clean STATA Files\Envy_2_V11_clean.dta
  Observations:            50                  
-    Variables:            10                  2 Oct 2024 15:16
--------------------------------------------------------------------------------------------
+    Variables:            10                  3 Oct 2024 12:44
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Variable      Storage   Display    Value
     name         type    format    label      Variable label
--------------------------------------------------------------------------------------------
-WTP             byte    %10.0g                # of tasks subject would be willing to do to
-                                                receive favorite painting
-HEL             byte    %10.0g                Envy Level w/ higher WTP received painting
-                                                for free on a scale of 1-10
-DPH             int     %10.0g                # of tasks to prevent other (non prev)
-                                                particip after High got for free
-LEL             byte    %10.0g                Envy Level w/ lower WTP received painting for
-                                                free on a scale of 1-10
-DPL             byte    %10.0g                # of tasks to prevent other (non prev)
-                                                particip after Low got for free
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+WTP             byte    %10.0g                # of tasks subject would be willing to do to receive favorite painting
+HEL             byte    %10.0g                Envy Level w/ higher WTP received painting for free on a scale of 1-10
+DPH             int     %10.0g                # of tasks to prevent other (non prev) particip after High got for free
+LEL             byte    %10.0g                Envy Level w/ lower WTP received painting for free on a scale of 1-10
+DPL             byte    %10.0g                # of tasks to prevent other (non prev) particip after Low got for free
 PROLIFIC_PID    str24   %24s                  PROLIFIC_PID
 WTP_high        int     %10.0g                WTP of High WTP participant
 WTP_low         byte    %10.0g                WTP of Low WTP participant
 someone_else    float   %9.0g                 
 v11             float   %9.0g                 
--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Sorted by: 
 
 
-   Stats |       WTP       HEL       DPH       LEL       DPL       v11  someon~e  WTP_high
----------+--------------------------------------------------------------------------------
-    Mean |     12.48      3.72     10.48       4.8      3.72         1         1     124.8
-      SD |  19.93381  2.525206  19.93974  3.291403   7.18517         0         0  199.3381
-     Min |         1         1         0         1         0         1         1        10
-     Max |       100        10       101        10        33         1         1      1000
-       N |        50        25        25        25        25        50        50        50
-------------------------------------------------------------------------------------------
-
-   Stats |   WTP_low
----------+----------
-    Mean |      6.02
-      SD |  10.04376
-     Min |         0
-     Max |        50
-       N |        50
---------------------
+   Stats |       WTP       HEL       DPH       LEL       DPL       v11  someon~e  WTP_high   WTP_low
+---------+------------------------------------------------------------------------------------------
+    Mean |     12.48      3.72     10.48       4.8      3.72         1         1     124.8      6.02
+      SD |  19.93381  2.525206  19.93974  3.291403   7.18517         0         0  199.3381  10.04376
+     Min |         1         1         0         1         0         1         1        10         0
+     Max |       100        10       101        10        33         1         1      1000        50
+       N |        50        25        25        25        25        50        50        50        50
+----------------------------------------------------------------------------------------------------
 
 </code></pre>
-<pre><code>
-Envy 2 V10: How much
+<pre><code>Envy 2 V10:
+
+Key variation: eliciting WTP to prevent High/Low WTP participant receiving your second favorite painting **following** them already having received your favorite. Your second favorite painting is rated highly by *both* participants
+
+Rank of Prevented Painting: Second Favorite
+
+Within/Between: Between
 
 Summary Statistics for Envy 2 V10:
 
+
 Contains data from .\Clean STATA Files\Envy_2_V11_clean.dta
  Observations:           109                  
-    Variables:            10                  2 Oct 2024 15:16
--------------------------------------------------------------------------------------------
+    Variables:            10                  3 Oct 2024 12:44
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Variable      Storage   Display    Value
     name         type    format    label      Variable label
--------------------------------------------------------------------------------------------
-WTP             int     %10.0g                # of tasks subject would be willing to do to
-                                                receive favorite painting
-HEL             byte    %10.0g                Envy Level w/ higher WTP received painting
-                                                for free on a scale of 1-10
-DPH             int     %10.0g                # of tasks to prevent second favorite High
-                                                WTP particip after they already recei
-LEL             byte    %10.0g                Envy Level w/ lower WTP received painting for
-                                                free on a scale of 1-10
-DPL             int     %10.0g                # of tasks to prevent second favorite Low WTP
-                                                particip after they already receiv
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+WTP             int     %10.0g                # of tasks subject would be willing to do to receive favorite painting
+HEL             byte    %10.0g                Envy Level w/ higher WTP received painting for free on a scale of 1-10
+DPH             int     %10.0g                # of tasks to prevent second favorite High WTP particip after they already recei
+LEL             byte    %10.0g                Envy Level w/ lower WTP received painting for free on a scale of 1-10
+DPL             int     %10.0g                # of tasks to prevent second favorite Low WTP particip after they already receiv
 PROLIFIC_PID    str24   %24s                  PROLIFIC_PID
 WTP_high        int     %10.0g                WTP of High WTP participant
 WTP_low         int     %10.0g                WTP of Low WTP participant
 someone_else    float   %9.0g                 
 v10             float   %9.0g                 
--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Sorted by: 
 
 
-   Stats |       WTP       HEL       DPH       LEL       DPL       v10  someon~e  WTP_high
----------+--------------------------------------------------------------------------------
-    Mean |  24.44037  4.277778  440.7222  4.618182      28.2         1         0  244.4037
-      SD |  97.34393  2.877477  2715.865   2.97826  75.98986         0         0  973.4393
-     Min |         1         1         0         1         0         1         0        10
-     Max |      1000         9     20000        10       401         1         0     10000
-       N |       109        54        54        55        55       109       109       109
-------------------------------------------------------------------------------------------
+   Stats |       WTP       HEL       DPH       LEL       DPL       v10  someon~e  WTP_high   WTP_low
+---------+------------------------------------------------------------------------------------------
+    Mean |  24.44037  4.277778  440.7222  4.618182      28.2         1         0  244.4037  11.98165
+      SD |  97.34393  2.877477  2715.865   2.97826  75.98986         0         0  973.4393  48.71668
+     Min |         1         1         0         1         0         1         0        10         0
+     Max |      1000         9     20000        10       401         1         0     10000       500
+       N |       109        54        54        55        55       109       109       109       109
+----------------------------------------------------------------------------------------------------
 
-   Stats |   WTP_low
----------+----------
-    Mean |  11.98165
-      SD |  48.71668
-     Min |         0
-     Max |       500
-       N |       109
---------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </code></pre>
