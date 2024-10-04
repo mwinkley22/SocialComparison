@@ -106,6 +106,15 @@ log off
 
 
 
+
+
+
+
+
+
+
+
+
 *Importing and cleaning the results for "Envy 2 V10"*
 import excel using "..\Raw Excel Files\Envy+2+V10_October+2,+2024_14.24.xlsx", firstrow clear
 
@@ -322,6 +331,33 @@ reg destroy_var c.dp_var##i.wtpHighLowCondition WTP
 
 ttest dp_var, by(wtpHighLowCondition)
 log off
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

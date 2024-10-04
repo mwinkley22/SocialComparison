@@ -214,7 +214,7 @@ gen general_wtp = case_c_wtp
 replace general_wtp = case_d_wtp if missing(general_wtp)
 
 gen general_envy = case_c_envy_1
-replace general_envy = case_d_envy_1 if missing(general_envy)
+replace general_envy = case_d_envy_1 if missing(general_wtp)
 
 
 gen case_c_tag= 1 if !missing(case_c_wtp)
