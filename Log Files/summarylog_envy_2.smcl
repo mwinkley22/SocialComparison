@@ -1,9 +1,9 @@
 {smcl}
 {com}{sf}{ul off}{txt}{.-}
       name:  {res}<unnamed>
-       {txt}log:  {res}C:\Users\Myles\OneDrive\Documents\Alex Research\SocialComparison\summarylog.smcl
+       {txt}log:  {res}C:\Users\Myles\OneDrive\Documents\Alex Research\SocialComparison\Scripts\../Log Files/summarylog_envy_2.smcl
   {txt}log type:  {res}smcl
- {txt}opened on:  {res} 3 Oct 2024, 14:48:29
+ {txt}opened on:  {res} 3 Oct 2024, 20:14:28
 {txt}
 {com}. 
 . /*
@@ -20,9 +20,9 @@
 . 
 . describe, full
 
-{txt}Contains data from {res}.\Clean STATA Files\Envy_2_V11_clean.dta
+{txt}Contains data from {res}..\Clean STATA Files\Envy_2_V11_clean.dta
 {txt} Observations:{res}            50                  
-{txt}    Variables:{res}            17                  3 Oct 2024 14:48
+{txt}    Variables:{res}            17                  3 Oct 2024 20:14
 {txt}{hline}
 Variable      Storage   Display    Value
     name         type    format    label      Variable label
@@ -120,19 +120,39 @@ wtpHighLowCondition#c.envy_var {c |}
 {txt}{hline 31}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}{txt}
 {com}. 
-. log off
+. 
+. ttest envy_var, by(wtpHighLowCondition)
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. err.{col 47}Std. dev.{col 59}[95% conf. interval]
+{hline 9}{c +}{hline 68}
+       0 {c |}{res}{col 12}     25{col 22}      4.8{col 34} .6582806{col 46} 3.291403{col 58} 3.441376{col 70} 6.158624
+       {txt}1 {c |}{res}{col 12}     25{col 22}     3.72{col 34} .5050413{col 46} 2.525206{col 58} 2.677646{col 70} 4.762354
+{txt}{hline 9}{c +}{hline 68}
+Combined {c |}{res}{col 12}     50{col 22}     4.26{col 34} .4177784{col 46} 2.954139{col 58} 3.420443{col 70} 5.099557
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22}     1.08{col 34} .8296987{col 58}-.5882211{col 70} 2.748221
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}0{txt}) - mean({res}1{txt})                                      t = {res}  1.3017
+{txt}H0: diff = 0                                     Degrees of freedom = {res}      48
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.9004         {txt}Pr(|T| > |t|) = {res}0.1992          {txt}Pr(T > t) = {res}0.0996
+{txt}
+{com}. log off
       {txt}name:  {res}<unnamed>
-       {txt}log:  {res}C:\Users\Myles\OneDrive\Documents\Alex Research\SocialComparison\summarylog.smcl
+       {txt}log:  {res}C:\Users\Myles\OneDrive\Documents\Alex Research\SocialComparison\Scripts\../Log Files/summarylog_envy_2.smcl
   {txt}log type:  {res}smcl
- {txt}paused on:  {res} 3 Oct 2024, 14:48:29
+ {txt}paused on:  {res} 3 Oct 2024, 20:14:28
 {txt}{.-}
 {smcl}
 {txt}{sf}{ul off}{smcl}
 {com}{sf}{ul off}{txt}{.-}
       name:  {res}<unnamed>
-       {txt}log:  {res}C:\Users\Myles\OneDrive\Documents\Alex Research\SocialComparison\summarylog.smcl
+       {txt}log:  {res}C:\Users\Myles\OneDrive\Documents\Alex Research\SocialComparison\Scripts\../Log Files/summarylog_envy_2.smcl
   {txt}log type:  {res}smcl
-{txt}resumed on:  {res} 3 Oct 2024, 14:48:29
+{txt}resumed on:  {res} 3 Oct 2024, 20:14:28
 {txt}
 {com}. 
 . /*
@@ -149,9 +169,9 @@ wtpHighLowCondition#c.envy_var {c |}
 . 
 . describe, full
 
-{txt}Contains data from {res}.\Clean STATA Files\Envy_2_V10_clean.dta
+{txt}Contains data from {res}..\Clean STATA Files\Envy_2_V10_clean.dta
 {txt} Observations:{res}           103                  
-{txt}    Variables:{res}            17                  3 Oct 2024 14:48
+{txt}    Variables:{res}            17                  3 Oct 2024 20:14
 {txt}{hline}
 Variable      Storage   Display    Value
     name         type    format    label      Variable label
@@ -249,19 +269,38 @@ wtpHighLowCondition#c.envy_var {c |}
 {txt}{hline 31}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}{txt}
 {com}. 
-. log off
+. ttest envy_var, by(wtpHighLowCondition)
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. err.{col 47}Std. dev.{col 59}[95% conf. interval]
+{hline 9}{c +}{hline 68}
+       0 {c |}{res}{col 12}     52{col 22} 4.730769{col 34} .4183889{col 46} 3.017046{col 58} 3.890818{col 70}  5.57072
+       {txt}1 {c |}{res}{col 12}     51{col 22} 4.117647{col 34} .4025868{col 46} 2.875045{col 58} 3.309028{col 70} 4.926266
+{txt}{hline 9}{c +}{hline 68}
+Combined {c |}{res}{col 12}    103{col 22} 4.427184{col 34} .2905983{col 46}  2.94925{col 58} 3.850784{col 70} 5.003585
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22} .6131222{col 34} .5808993{col 58}-.5392259{col 70}  1.76547
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}0{txt}) - mean({res}1{txt})                                      t = {res}  1.0555
+{txt}H0: diff = 0                                     Degrees of freedom = {res}     101
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.8531         {txt}Pr(|T| > |t|) = {res}0.2937          {txt}Pr(T > t) = {res}0.1469
+{txt}
+{com}. log off
       {txt}name:  {res}<unnamed>
-       {txt}log:  {res}C:\Users\Myles\OneDrive\Documents\Alex Research\SocialComparison\summarylog.smcl
+       {txt}log:  {res}C:\Users\Myles\OneDrive\Documents\Alex Research\SocialComparison\Scripts\../Log Files/summarylog_envy_2.smcl
   {txt}log type:  {res}smcl
- {txt}paused on:  {res} 3 Oct 2024, 14:48:29
+ {txt}paused on:  {res} 3 Oct 2024, 20:14:28
 {txt}{.-}
 {smcl}
 {txt}{sf}{ul off}{smcl}
 {com}{sf}{ul off}{txt}{.-}
       name:  {res}<unnamed>
-       {txt}log:  {res}C:\Users\Myles\OneDrive\Documents\Alex Research\SocialComparison\summarylog.smcl
+       {txt}log:  {res}C:\Users\Myles\OneDrive\Documents\Alex Research\SocialComparison\Scripts\../Log Files/summarylog_envy_2.smcl
   {txt}log type:  {res}smcl
-{txt}resumed on:  {res} 3 Oct 2024, 14:48:29
+{txt}resumed on:  {res} 3 Oct 2024, 20:14:28
 {txt}
 {com}. 
 . /*
@@ -278,9 +317,9 @@ wtpHighLowCondition#c.envy_var {c |}
 . 
 . describe, full
 
-{txt}Contains data from {res}.\Clean STATA Files\Envy_2_V9_clean.dta
+{txt}Contains data from {res}..\Clean STATA Files\Envy_2_V9_clean.dta
 {txt} Observations:{res}            51                  
-{txt}    Variables:{res}            17                  3 Oct 2024 14:48
+{txt}    Variables:{res}            17                  3 Oct 2024 20:14
 {txt}{hline}
 Variable      Storage   Display    Value
     name         type    format    label      Variable label
@@ -378,19 +417,39 @@ wtpHighLowCondition#c.dp_var {c |}
 {txt}{hline 29}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}{txt}
 {com}. 
-. log off
+. 
+. ttest dp_var, by(wtpHighLowCondition)
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. err.{col 47}Std. dev.{col 59}[95% conf. interval]
+{hline 9}{c +}{hline 68}
+       0 {c |}{res}{col 12}     25{col 22}     5.04{col 34} .5700292{col 46} 2.850146{col 58} 3.863517{col 70} 6.216483
+       {txt}1 {c |}{res}{col 12}     26{col 22} 3.115385{col 34} .5472362{col 46} 2.790368{col 58} 1.988331{col 70} 4.242439
+{txt}{hline 9}{c +}{hline 68}
+Combined {c |}{res}{col 12}     51{col 22} 4.058824{col 34} .4138881{col 46} 2.955752{col 58} 3.227505{col 70} 4.890142
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22} 1.924615{col 34} .7898553{col 58} .3373416{col 70} 3.511889
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}0{txt}) - mean({res}1{txt})                                      t = {res}  2.4367
+{txt}H0: diff = 0                                     Degrees of freedom = {res}      49
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.9907         {txt}Pr(|T| > |t|) = {res}0.0185          {txt}Pr(T > t) = {res}0.0093
+{txt}
+{com}. log off
       {txt}name:  {res}<unnamed>
-       {txt}log:  {res}C:\Users\Myles\OneDrive\Documents\Alex Research\SocialComparison\summarylog.smcl
+       {txt}log:  {res}C:\Users\Myles\OneDrive\Documents\Alex Research\SocialComparison\Scripts\../Log Files/summarylog_envy_2.smcl
   {txt}log type:  {res}smcl
- {txt}paused on:  {res} 3 Oct 2024, 14:48:29
+ {txt}paused on:  {res} 3 Oct 2024, 20:14:28
 {txt}{.-}
 {smcl}
 {txt}{sf}{ul off}{smcl}
 {com}{sf}{ul off}{txt}{.-}
       name:  {res}<unnamed>
-       {txt}log:  {res}C:\Users\Myles\OneDrive\Documents\Alex Research\SocialComparison\summarylog.smcl
+       {txt}log:  {res}C:\Users\Myles\OneDrive\Documents\Alex Research\SocialComparison\Scripts\../Log Files/summarylog_envy_2.smcl
   {txt}log type:  {res}smcl
-{txt}resumed on:  {res} 3 Oct 2024, 14:48:29
+{txt}resumed on:  {res} 3 Oct 2024, 20:14:28
 {txt}
 {com}. 
 . /*
@@ -407,9 +466,9 @@ wtpHighLowCondition#c.dp_var {c |}
 . 
 . describe, full
 
-{txt}Contains data from {res}.\Clean STATA Files\Envy_2_V4_clean.dta
+{txt}Contains data from {res}..\Clean STATA Files\Envy_2_V4_clean.dta
 {txt} Observations:{res}           198                  
-{txt}    Variables:{res}             7                  3 Oct 2024 14:48
+{txt}    Variables:{res}             7                  3 Oct 2024 20:14
 {txt}{hline}
 Variable      Storage   Display    Value
     name         type    format    label      Variable label
@@ -523,11 +582,31 @@ hypothetical#c.Envy_Level {c |}
 {txt}{hline 26}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}{txt}
 {com}. 
+. ttest Envy_Level, by(hypothetical)
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. err.{col 47}Std. dev.{col 59}[95% conf. interval]
+{hline 9}{c +}{hline 68}
+       0 {c |}{res}{col 12}     99{col 22} 4.444444{col 34} .3380075{col 46} 3.363132{col 58}  3.77368{col 70} 5.115209
+       {txt}1 {c |}{res}{col 12}     99{col 22} 3.252525{col 34} .2933129{col 46} 2.918426{col 58} 2.670455{col 70} 3.834595
+{txt}{hline 9}{c +}{hline 68}
+Combined {c |}{res}{col 12}    198{col 22} 3.848485{col 34} .2271984{col 46} 3.196964{col 58} 3.400432{col 70} 4.296538
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22} 1.191919{col 34} .4475282{col 58} .3093303{col 70} 2.074508
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}0{txt}) - mean({res}1{txt})                                      t = {res}  2.6633
+{txt}H0: diff = 0                                     Degrees of freedom = {res}     196
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.9958         {txt}Pr(|T| > |t|) = {res}0.0084          {txt}Pr(T > t) = {res}0.0042
+{txt}
+{com}. 
 . log off
       {txt}name:  {res}<unnamed>
-       {txt}log:  {res}C:\Users\Myles\OneDrive\Documents\Alex Research\SocialComparison\summarylog.smcl
+       {txt}log:  {res}C:\Users\Myles\OneDrive\Documents\Alex Research\SocialComparison\Scripts\../Log Files/summarylog_envy_2.smcl
   {txt}log type:  {res}smcl
- {txt}paused on:  {res} 3 Oct 2024, 14:48:29
+ {txt}paused on:  {res} 3 Oct 2024, 20:14:28
 {txt}{.-}
 {smcl}
 {txt}{sf}{ul off}
