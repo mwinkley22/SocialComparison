@@ -77,7 +77,7 @@ log using "../Log Files/summarylog_envy_2.smcl", replace
 /*
 Envy 2 V11:
 
-Key variation: eliciting WTP to prevent a random participant from receiving the painting **following** a High/Low WTP participant receiving your favorite painting.
+Key variation: soliciting WTP to prevent a random participant from receiving the painting **following** a High/Low WTP participant receiving your favorite painting.
 
 Rank of Prevented Painting: Second Favorite
 
@@ -99,15 +99,6 @@ reg destroy_var c.envy_var##i.wtpHighLowCondition WTP
 
 ttest envy_var, by(wtpHighLowCondition)
 log off
-
-
-
-
-
-
-
-
-
 
 
 
@@ -195,7 +186,7 @@ log on
 /*
 Envy 2 V10:
 
-Key variation: eliciting WTP to prevent High/Low WTP participant receiving your second favorite painting **following** them already having received your favorite. Your second favorite painting is rated highly by *both* participants
+Key variation: soliciting WTP to prevent High/Low WTP participant receiving your second favorite painting **following** them already having received your favorite. Your second favorite painting is rated highly by *both* participants
 
 Rank of Prevented Painting: Second Favorite
 
@@ -340,6 +331,104 @@ log off
 
 
 
+*Importing and analyzing Envy 2 V7
+import delimited using "..\Prolific Information\EnvyExploration2V7_PIDs.csv", clear
+keep if status=="APPROVED"
+
+rename participantid PROLIFIC_PID
+keep PROLIFIC_PID
+
+tempfile temp1
+
+save `temp1'
+
+
+import excel using "..\Raw Excel Files\Envy+2+V7_October+5,+2024_02.54.xlsx", firstrow clear
+drop in 1
+
+drop if Progress!= "100"
+keep if !missing(PROLIFIC_PID)
+duplicates drop PROLIFIC_PID, force 
+merge 1:1 PROLIFIC_PID using `temp1'
+
+
+keep if _merge ==3 
+drop _merge
+
+rename EnvyLevel_WTP_High Envy_Level_High
+rename EnvyLevel_WTP_low  Envy_Level_Low
+
+
+rename Destroy_2nd_highdes WTP_Prevent_High
+rename Destroy_2nd_lowdes WTP_Prevent_Low
+
+
+
+local select_vars WTP WTP_Prevent_High WTP_Prevent_Low Envy_Level_High Envy_Level_Low WTP_high WTP_low
+
+foreach arg of local select_vars {
+	destring `arg', force replace
+}
+keep `select_vars' PROLIFIC_PID
+
+
+
+reshape long WTP_Prevent Envy_Level, i(PROLIFIC_PID) j(treatment) string
+
+
+replace treatment = "0" if treatment=="_Low"
+replace treatment = "1" if treatment=="_High"
+
+destring treatment, force replace
+
+rename treatment hypothetical
+
+label variable hypothetical "=1 if other particip High WTP =0 if Low "
+label variable WTP_Prevent "WTP in tasks to prevent participant from receiving for free"
+label variable Envy_Level "Envy Level (0-10) if other participant received for free (hypo)"
+label variable WTP "WTP for favorite painting"
+label variable WTP_high "WTP of High WTP participant"
+label variable WTP_low "WTP of Low WTP participant"
+
+
+save "..\Clean STATA Files\Envy_2_V7_clean.dta",replace
+
+
+log on
+
+
+/*
+Envy 2 V7:
+
+Key variation: soliciting WTP to prevent participant from receiving the painting **following** that High/Low WTP participant receiving your favorite painting.
+
+Rank of Prevented Painting: Second Favorite
+
+Within/Between: Within
+
+Summary Statistics for Envy 2 V7:
+*/
+
+describe, full
+bysort hypothetical: tabstat WTP_Prevent Envy_Level, stats(mean sd min max n)
+
+
+reg WTP_Prevent c.Envy_Level##i.hypothetical
+reg WTP_Prevent c.Envy_Level##i.hypothetical WTP
+
+ttest Envy_Level, by(hypothetical)
+ttest WTP_Prevent, by(hypothetical)
+
+log off
+
+/*
+
+
+
+
+
+
+
 
 
 
@@ -380,6 +469,8 @@ save `temp1'
 
 
 import excel using "..\Raw Excel Files\Envy+2+V6_October+3,+2024_14.45.xlsx", firstrow clear
+drop in 1
+
 
 append using `temp1'
  
@@ -466,7 +557,7 @@ log off
 
 
 
-
+log close
 
 
 

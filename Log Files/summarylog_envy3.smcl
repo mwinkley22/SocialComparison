@@ -1,16 +1,16 @@
 {smcl}
 {com}{sf}{ul off}{txt}{.-}
       name:  {res}<unnamed>
-       {txt}log:  {res}C:\Users\winkley\Documents\Alex Research\SocialComparison\Scripts\../Log Files/summarylog_envy3.smcl
+       {txt}log:  {res}C:\Users\Myles\OneDrive\Documents\Alex Research\SocialComparison\Scripts\../Log Files/summarylog_envy3.smcl
   {txt}log type:  {res}smcl
- {txt}opened on:  {res} 4 Oct 2024, 14:19:42
+ {txt}opened on:  {res} 5 Oct 2024, 23:58:02
 {txt}
 {com}. 
 . describe, full 
 
 {txt}Contains data from {res}../Clean STATA Files/Envy_3_V1_clean.dtA
 {txt} Observations:{res}           198                  
-{txt}    Variables:{res}            18                  4 Oct 2024 14:19
+{txt}    Variables:{res}            18                  5 Oct 2024 23:58
 {txt}{hline}
 Variable      Storage   Display    Value
     name         type    format    label      Variable label
@@ -186,26 +186,23 @@ cases_numeric {c |}
 {txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}   -0.0151
 {txt}       Total {c |} {res} 99464781.8       197   504897.37   {txt}Root MSE        =   {res}  715.9
 
-{txt}{hline 15}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
-{col 1}   general_wtp{col 16}{c |} Coefficient{col 28}  Std. err.{col 40}      t{col 48}   P>|t|{col 56}     [95% con{col 69}f. interval]
-{hline 15}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
-{space 2}general_envy {c |}{col 16}{res}{space 2}-22.18931{col 28}{space 2} 25.37492{col 39}{space 1}   -0.87{col 48}{space 3}0.383{col 56}{space 4} -72.2387{col 69}{space 3} 27.86009
-{txt}{space 2}1.case_b_tag {c |}{col 16}{res}{space 2}-154.8674{col 28}{space 2} 149.0069{col 39}{space 1}   -1.04{col 48}{space 3}0.300{col 56}{space 4}-448.7681{col 69}{space 3} 139.0332
-{txt}{space 14} {c |}
-{space 4}case_b_tag#{c |}
-c.general_envy {c |}
-{space 12}1  {c |}{col 16}{res}{space 2} 20.42884{col 28}{space 2} 42.07847{col 39}{space 1}    0.49{col 48}{space 3}0.628{col 56}{space 4}-62.56658{col 69}{space 3} 103.4243
-{txt}{space 14} {c |}
-{space 4}case_c_tag#{c |}
-c.general_envy {c |}
-{space 12}1  {c |}{col 16}{res}{space 2}-.2546363{col 28}{space 2} 27.40494{col 39}{space 1}   -0.01{col 48}{space 3}0.993{col 56}{space 4}-54.30804{col 69}{space 3} 53.79876
-{txt}{space 14} {c |}
-{space 4}case_d_tag#{c |}
-c.general_envy {c |}
-{space 12}1  {c |}{col 16}{res}{space 2}-3.564489{col 28}{space 2} 29.11325{col 39}{space 1}   -0.12{col 48}{space 3}0.903{col 56}{space 4}-60.98735{col 69}{space 3} 53.85838
-{txt}{space 14} {c |}
-{space 9}_cons {c |}{col 16}{res}{space 2}  177.525{col 28}{space 2} 93.66245{col 39}{space 1}    1.90{col 48}{space 3}0.060{col 56}{space 4}-7.214482{col 69}{space 3} 362.2645
-{txt}{hline 15}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{txt}{hline 26}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}              general_wtp{col 27}{c |} Coefficient{col 39}  Std. err.{col 51}      t{col 59}   P>|t|{col 67}     [95% con{col 80}f. interval]
+{hline 26}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 13}general_envy {c |}{col 27}{res}{space 2}-22.18931{col 39}{space 2} 25.37492{col 50}{space 1}   -0.87{col 59}{space 3}0.383{col 67}{space 4} -72.2387{col 80}{space 3} 27.86009
+{txt}{space 13}1.case_b_tag {c |}{col 27}{res}{space 2}-154.8674{col 39}{space 2} 149.0069{col 50}{space 1}   -1.04{col 59}{space 3}0.300{col 67}{space 4}-448.7681{col 80}{space 3} 139.0332
+{txt}{space 25} {c |}
+case_b_tag#c.general_envy {c |}
+{space 23}1  {c |}{col 27}{res}{space 2} 20.42884{col 39}{space 2} 42.07847{col 50}{space 1}    0.49{col 59}{space 3}0.628{col 67}{space 4}-62.56658{col 80}{space 3} 103.4243
+{txt}{space 25} {c |}
+case_c_tag#c.general_envy {c |}
+{space 23}1  {c |}{col 27}{res}{space 2}-.2546363{col 39}{space 2} 27.40494{col 50}{space 1}   -0.01{col 59}{space 3}0.993{col 67}{space 4}-54.30804{col 80}{space 3} 53.79876
+{txt}{space 25} {c |}
+case_d_tag#c.general_envy {c |}
+{space 23}1  {c |}{col 27}{res}{space 2}-3.564489{col 39}{space 2} 29.11325{col 50}{space 1}   -0.12{col 59}{space 3}0.903{col 67}{space 4}-60.98735{col 80}{space 3} 53.85838
+{txt}{space 25} {c |}
+{space 20}_cons {c |}{col 27}{res}{space 2}  177.525{col 39}{space 2} 93.66245{col 50}{space 1}    1.90{col 59}{space 3}0.060{col 67}{space 4}-7.214482{col 80}{space 3} 362.2645
+{txt}{hline 26}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}{txt}
 {com}. 
 . reg general_wtp_tr c.general_envy##case_b_tag c.general_envy#case_c_tag c.general_envy#case_d_tag
@@ -217,41 +214,38 @@ c.general_envy {c |}
 {txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.0201
 {txt}       Total {c |} {res} 34577.4074       188   183.92238   {txt}Root MSE        =   {res} 13.425
 
-{txt}{hline 15}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
-{col 1}general_wtp_tr{col 16}{c |} Coefficient{col 28}  Std. err.{col 40}      t{col 48}   P>|t|{col 56}     [95% con{col 69}f. interval]
-{hline 15}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
-{space 2}general_envy {c |}{col 16}{res}{space 2} .7993203{col 28}{space 2} .5128966{col 39}{space 1}    1.56{col 48}{space 3}0.121{col 56}{space 4}-.2126309{col 69}{space 3} 1.811271
-{txt}{space 2}1.case_b_tag {c |}{col 16}{res}{space 2} .2000556{col 28}{space 2} 2.881233{col 39}{space 1}    0.07{col 48}{space 3}0.945{col 56}{space 4}-5.484651{col 69}{space 3} 5.884763
-{txt}{space 14} {c |}
-{space 4}case_b_tag#{c |}
-c.general_envy {c |}
-{space 12}1  {c |}{col 16}{res}{space 2}-.4371548{col 28}{space 2} .8154615{col 39}{space 1}   -0.54{col 48}{space 3}0.593{col 56}{space 4} -2.04607{col 69}{space 3}  1.17176
-{txt}{space 14} {c |}
-{space 4}case_c_tag#{c |}
-c.general_envy {c |}
-{space 12}1  {c |}{col 16}{res}{space 2} .2827692{col 28}{space 2} .5492087{col 39}{space 1}    0.51{col 48}{space 3}0.607{col 56}{space 4}-.8008261{col 69}{space 3} 1.366364
-{txt}{space 14} {c |}
-{space 4}case_d_tag#{c |}
-c.general_envy {c |}
-{space 12}1  {c |}{col 16}{res}{space 2}-.5617899{col 28}{space 2} .5713872{col 39}{space 1}   -0.98{col 48}{space 3}0.327{col 56}{space 4}-1.689144{col 69}{space 3} .5655638
-{txt}{space 14} {c |}
-{space 9}_cons {c |}{col 16}{res}{space 2} 6.288035{col 28}{space 2} 1.792606{col 39}{space 1}    3.51{col 48}{space 3}0.001{col 56}{space 4} 2.751201{col 69}{space 3} 9.824869
-{txt}{hline 15}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{txt}{hline 26}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}           general_wtp_tr{col 27}{c |} Coefficient{col 39}  Std. err.{col 51}      t{col 59}   P>|t|{col 67}     [95% con{col 80}f. interval]
+{hline 26}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 13}general_envy {c |}{col 27}{res}{space 2} .7993203{col 39}{space 2} .5128966{col 50}{space 1}    1.56{col 59}{space 3}0.121{col 67}{space 4}-.2126309{col 80}{space 3} 1.811271
+{txt}{space 13}1.case_b_tag {c |}{col 27}{res}{space 2} .2000556{col 39}{space 2} 2.881233{col 50}{space 1}    0.07{col 59}{space 3}0.945{col 67}{space 4}-5.484651{col 80}{space 3} 5.884763
+{txt}{space 25} {c |}
+case_b_tag#c.general_envy {c |}
+{space 23}1  {c |}{col 27}{res}{space 2}-.4371548{col 39}{space 2} .8154615{col 50}{space 1}   -0.54{col 59}{space 3}0.593{col 67}{space 4} -2.04607{col 80}{space 3}  1.17176
+{txt}{space 25} {c |}
+case_c_tag#c.general_envy {c |}
+{space 23}1  {c |}{col 27}{res}{space 2} .2827692{col 39}{space 2} .5492087{col 50}{space 1}    0.51{col 59}{space 3}0.607{col 67}{space 4}-.8008261{col 80}{space 3} 1.366364
+{txt}{space 25} {c |}
+case_d_tag#c.general_envy {c |}
+{space 23}1  {c |}{col 27}{res}{space 2}-.5617899{col 39}{space 2} .5713872{col 50}{space 1}   -0.98{col 59}{space 3}0.327{col 67}{space 4}-1.689144{col 80}{space 3} .5655638
+{txt}{space 25} {c |}
+{space 20}_cons {c |}{col 27}{res}{space 2} 6.288035{col 39}{space 2} 1.792606{col 50}{space 1}    3.51{col 59}{space 3}0.001{col 67}{space 4} 2.751201{col 80}{space 3} 9.824869
+{txt}{hline 26}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}{txt}
 {com}. 
 . log off
       {txt}name:  {res}<unnamed>
-       {txt}log:  {res}C:\Users\winkley\Documents\Alex Research\SocialComparison\Scripts\../Log Files/summarylog_envy3.smcl
+       {txt}log:  {res}C:\Users\Myles\OneDrive\Documents\Alex Research\SocialComparison\Scripts\../Log Files/summarylog_envy3.smcl
   {txt}log type:  {res}smcl
- {txt}paused on:  {res} 4 Oct 2024, 14:19:42
+ {txt}paused on:  {res} 5 Oct 2024, 23:58:02
 {txt}{.-}
 {smcl}
 {txt}{sf}{ul off}{smcl}
 {com}{sf}{ul off}{txt}{.-}
       name:  {res}<unnamed>
-       {txt}log:  {res}C:\Users\winkley\Documents\Alex Research\SocialComparison\Scripts\../Log Files/summarylog_envy3.smcl
+       {txt}log:  {res}C:\Users\Myles\OneDrive\Documents\Alex Research\SocialComparison\Scripts\../Log Files/summarylog_envy3.smcl
   {txt}log type:  {res}smcl
-{txt}resumed on:  {res} 4 Oct 2024, 14:19:42
+{txt}resumed on:  {res} 5 Oct 2024, 23:58:02
 {txt}
 {com}. sum case_a_envy_1 case_b_envy_1 case_c_envy_1 case_d_envy_1 case_a_wtp case_b_wtp case_c_wtp case_d_wtp
 
@@ -293,6 +287,51 @@ case_b_wtp~r {c |}{res}         60         8.7    11.01201          1         50
 {txt}(133 missing values generated)
 
 {com}. 
+. 
+. ttest case_a_b == 0
+
+{txt}One-sample t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. err.{col 47}Std. dev.{col 59}[95% conf. interval]
+{hline 9}{c +}{hline 68}
+case_a_b {c |}{res}{col 12}     57{col 22}-.0175439{col 34} .6966134{col 46} 5.259316{col 58}-1.413028{col 70}  1.37794
+{txt}{hline 9}{c BT}{hline 68}
+    mean = mean({res}case_a_b{txt})                                         t = {res} -0.0252
+{txt}H0: mean = {res}0                                     {txt}Degrees of freedom = {res}      56
+
+    {txt}Ha: mean < {res}0                 {txt}Ha: mean != {res}0                 {txt}Ha: mean > {res}0
+ {txt}Pr(T < t) = {res}0.4900         {txt}Pr(|T| > |t|) = {res}0.9800          {txt}Pr(T > t) = {res}0.5100
+{txt}
+{com}. ttest case_a_c == 0
+
+{txt}One-sample t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. err.{col 47}Std. dev.{col 59}[95% conf. interval]
+{hline 9}{c +}{hline 68}
+case_a_c {c |}{res}{col 12}     61{col 22}-.5409836{col 34} .4086321{col 46} 3.191519{col 58} -1.35837{col 70} .2764023
+{txt}{hline 9}{c BT}{hline 68}
+    mean = mean({res}case_a_c{txt})                                         t = {res} -1.3239
+{txt}H0: mean = {res}0                                     {txt}Degrees of freedom = {res}      60
+
+    {txt}Ha: mean < {res}0                 {txt}Ha: mean != {res}0                 {txt}Ha: mean > {res}0
+ {txt}Pr(T < t) = {res}0.0953         {txt}Pr(|T| > |t|) = {res}0.1906          {txt}Pr(T > t) = {res}0.9047
+{txt}
+{com}. ttest case_a_d == 0
+
+{txt}One-sample t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. err.{col 47}Std. dev.{col 59}[95% conf. interval]
+{hline 9}{c +}{hline 68}
+case_a_d {c |}{res}{col 12}     64{col 22}      .75{col 34} .7120003{col 46} 5.696002{col 58}-.6728191{col 70} 2.172819
+{txt}{hline 9}{c BT}{hline 68}
+    mean = mean({res}case_a_d{txt})                                         t = {res}  1.0534
+{txt}H0: mean = {res}0                                     {txt}Degrees of freedom = {res}      63
+
+    {txt}Ha: mean < {res}0                 {txt}Ha: mean != {res}0                 {txt}Ha: mean > {res}0
+ {txt}Pr(T < t) = {res}0.8519         {txt}Pr(|T| > |t|) = {res}0.2962          {txt}Pr(T > t) = {res}0.1481
+{txt}
+{com}. 
+. 
 . ttest case_a_b==case_a_c, unpaired
 
 {txt}Two-sample t test with equal variances
@@ -374,17 +413,17 @@ Combined {c |}{res}{col 12}     84{col 22}-.5119048{col 34} .5394623{col 46} 4.9
 {com}. 
 . log off
       {txt}name:  {res}<unnamed>
-       {txt}log:  {res}C:\Users\winkley\Documents\Alex Research\SocialComparison\Scripts\../Log Files/summarylog_envy3.smcl
+       {txt}log:  {res}C:\Users\Myles\OneDrive\Documents\Alex Research\SocialComparison\Scripts\../Log Files/summarylog_envy3.smcl
   {txt}log type:  {res}smcl
- {txt}paused on:  {res} 4 Oct 2024, 14:19:42
+ {txt}paused on:  {res} 5 Oct 2024, 23:58:02
 {txt}{.-}
 {smcl}
 {txt}{sf}{ul off}{smcl}
 {com}{sf}{ul off}{txt}{.-}
       name:  {res}<unnamed>
-       {txt}log:  {res}C:\Users\winkley\Documents\Alex Research\SocialComparison\Scripts\../Log Files/summarylog_envy3.smcl
+       {txt}log:  {res}C:\Users\Myles\OneDrive\Documents\Alex Research\SocialComparison\Scripts\../Log Files/summarylog_envy3.smcl
   {txt}log type:  {res}smcl
-{txt}resumed on:  {res} 4 Oct 2024, 14:19:42
+{txt}resumed on:  {res} 5 Oct 2024, 23:58:02
 {txt}
 {com}. 
 . sum case_a_envy_1 case_c_envy_1 case_d_envy_1 case_a_wtp case_c_wtp case_d_wtp
@@ -422,31 +461,68 @@ case_d_wtp~r {c |}{res}         54    10.24074    11.59365          1         51
 {txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.9288
 {txt}       Total {c |} {res} 250707.592       119  2106.78648   {txt}Root MSE        =   {res} 12.248
 
-{txt}{hline 24}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
-{col 1}            general_wtp{col 25}{c |} Coefficient{col 37}  Std. err.{col 49}      t{col 57}   P>|t|{col 65}     [95% con{col 78}f. interval]
-{hline 24}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
-{space 11}general_envy {c |}{col 25}{res}{space 2} .7002528{col 37}{space 2}    .4662{col 48}{space 1}    1.50{col 57}{space 3}0.136{col 65}{space 4}-.2232858{col 78}{space 3} 1.623791
-{txt}{space 11}1.case_c_tag {c |}{col 25}{res}{space 2} 4.189195{col 37}{space 2}  3.74179{col 48}{space 1}    1.12{col 57}{space 3}0.265{col 65}{space 4}-3.223262{col 78}{space 3} 11.60165
-{txt}{space 23} {c |}
-{space 13}case_c_tag#{c |}
-{space 9}c.general_envy {c |}
-{space 21}1  {c |}{col 25}{res}{space 2}-1.215825{col 37}{space 2} .6617124{col 48}{space 1}   -1.84{col 57}{space 3}0.069{col 65}{space 4}-2.526672{col 78}{space 3} .0950224
-{txt}{space 23} {c |}
-{space 13}case_a_wtp {c |}{col 25}{res}{space 2} .9375685{col 37}{space 2} .0517526{col 48}{space 1}   18.12{col 57}{space 3}0.000{col 65}{space 4}  .835047{col 78}{space 3}  1.04009
-{txt}{space 23} {c |}
-case_c_tag#c.case_a_wtp {c |}
-{space 21}1  {c |}{col 25}{res}{space 2} .3744396{col 37}{space 2} .0639644{col 48}{space 1}    5.85{col 57}{space 3}0.000{col 65}{space 4} .2477267{col 78}{space 3} .5011526
-{txt}{space 23} {c |}
-{space 18}_cons {c |}{col 25}{res}{space 2}-2.155143{col 37}{space 2} 2.755014{col 48}{space 1}   -0.78{col 57}{space 3}0.436{col 65}{space 4}-7.612804{col 78}{space 3} 3.302518
-{txt}{hline 24}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{txt}{hline 26}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}              general_wtp{col 27}{c |} Coefficient{col 39}  Std. err.{col 51}      t{col 59}   P>|t|{col 67}     [95% con{col 80}f. interval]
+{hline 26}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 13}general_envy {c |}{col 27}{res}{space 2} .7002528{col 39}{space 2}    .4662{col 50}{space 1}    1.50{col 59}{space 3}0.136{col 67}{space 4}-.2232858{col 80}{space 3} 1.623791
+{txt}{space 13}1.case_c_tag {c |}{col 27}{res}{space 2} 4.189195{col 39}{space 2}  3.74179{col 50}{space 1}    1.12{col 59}{space 3}0.265{col 67}{space 4}-3.223262{col 80}{space 3} 11.60165
+{txt}{space 25} {c |}
+case_c_tag#c.general_envy {c |}
+{space 23}1  {c |}{col 27}{res}{space 2}-1.215825{col 39}{space 2} .6617124{col 50}{space 1}   -1.84{col 59}{space 3}0.069{col 67}{space 4}-2.526672{col 80}{space 3} .0950224
+{txt}{space 25} {c |}
+{space 15}case_a_wtp {c |}{col 27}{res}{space 2} .9375685{col 39}{space 2} .0517526{col 50}{space 1}   18.12{col 59}{space 3}0.000{col 67}{space 4}  .835047{col 80}{space 3}  1.04009
+{txt}{space 25} {c |}
+{space 2}case_c_tag#c.case_a_wtp {c |}
+{space 23}1  {c |}{col 27}{res}{space 2} .3744396{col 39}{space 2} .0639644{col 50}{space 1}    5.85{col 59}{space 3}0.000{col 67}{space 4} .2477267{col 80}{space 3} .5011526
+{txt}{space 25} {c |}
+{space 20}_cons {c |}{col 27}{res}{space 2}-2.155143{col 39}{space 2} 2.755014{col 50}{space 1}   -0.78{col 59}{space 3}0.436{col 67}{space 4}-7.612804{col 80}{space 3} 3.302518
+{txt}{hline 26}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}{txt}
+{com}. 
+. 
+. 
+. gen case_a_c = case_a_wtp_tr-case_c_wtp_tr
+{txt}(67 missing values generated)
+
+{com}. gen case_a_d = case_a_wtp_tr-case_d_wtp_tr
+{txt}(66 missing values generated)
+
+{com}. 
+. ttest case_a_c==0
+
+{txt}One-sample t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. err.{col 47}Std. dev.{col 59}[95% conf. interval]
+{hline 9}{c +}{hline 68}
+case_a_c {c |}{res}{col 12}     53{col 22}-2.716981{col 34} 1.924439{col 46} 14.01013{col 58}-6.578651{col 70} 1.144689
+{txt}{hline 9}{c BT}{hline 68}
+    mean = mean({res}case_a_c{txt})                                         t = {res} -1.4118
+{txt}H0: mean = {res}0                                     {txt}Degrees of freedom = {res}      52
+
+    {txt}Ha: mean < {res}0                 {txt}Ha: mean != {res}0                 {txt}Ha: mean > {res}0
+ {txt}Pr(T < t) = {res}0.0820         {txt}Pr(|T| > |t|) = {res}0.1640          {txt}Pr(T > t) = {res}0.9180
+{txt}
+{com}. ttest case_a_d==0
+
+{txt}One-sample t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. err.{col 47}Std. dev.{col 59}[95% conf. interval]
+{hline 9}{c +}{hline 68}
+case_a_d {c |}{res}{col 12}     54{col 22}-1.222222{col 34} .6779273{col 46} 4.981728{col 58}-2.581972{col 70} .1375277
+{txt}{hline 9}{c BT}{hline 68}
+    mean = mean({res}case_a_d{txt})                                         t = {res} -1.8029
+{txt}H0: mean = {res}0                                     {txt}Degrees of freedom = {res}      53
+
+    {txt}Ha: mean < {res}0                 {txt}Ha: mean != {res}0                 {txt}Ha: mean > {res}0
+ {txt}Pr(T < t) = {res}0.0385         {txt}Pr(|T| > |t|) = {res}0.0771          {txt}Pr(T > t) = {res}0.9615
+{txt}
 {com}. 
 . 
 . log close
       {txt}name:  {res}<unnamed>
-       {txt}log:  {res}C:\Users\winkley\Documents\Alex Research\SocialComparison\Scripts\../Log Files/summarylog_envy3.smcl
+       {txt}log:  {res}C:\Users\Myles\OneDrive\Documents\Alex Research\SocialComparison\Scripts\../Log Files/summarylog_envy3.smcl
   {txt}log type:  {res}smcl
- {txt}closed on:  {res} 4 Oct 2024, 14:19:42
+ {txt}closed on:  {res} 5 Oct 2024, 23:58:02
 {txt}{.-}
 {smcl}
 {txt}{sf}{ul off}

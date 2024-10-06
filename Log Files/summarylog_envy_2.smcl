@@ -1,15 +1,15 @@
 {smcl}
 {com}{sf}{ul off}{txt}{.-}
       name:  {res}<unnamed>
-       {txt}log:  {res}C:\Users\winkley\Documents\Alex Research\SocialComparison\Scripts\../Log Files/summarylog_envy_2.smcl
+       {txt}log:  {res}C:\Users\Myles\OneDrive\Documents\Alex Research\SocialComparison\Scripts\../Log Files/summarylog_envy_2.smcl
   {txt}log type:  {res}smcl
- {txt}opened on:  {res} 4 Oct 2024, 15:03:18
+ {txt}opened on:  {res} 5 Oct 2024, 22:31:41
 {txt}
 {com}. 
 . /*
 > Envy 2 V11:
 > 
-> Key variation: eliciting WTP to prevent a random participant from receiving the painting **following** a High/Low WTP participant receiving your favorite painting.
+> Key variation: soliciting WTP to prevent a random participant from receiving the painting **following** a High/Low WTP participant receiving your favorite painting.
 > 
 > Rank of Prevented Painting: Second Favorite
 > 
@@ -22,7 +22,7 @@
 
 {txt}Contains data from {res}..\Clean STATA Files\Envy_2_V11_clean.dta
 {txt} Observations:{res}            50                  
-{txt}    Variables:{res}            17                  4 Oct 2024 15:03
+{txt}    Variables:{res}            17                  5 Oct 2024 22:31
 {txt}{hline}
 Variable      Storage   Display    Value
     name         type    format    label      Variable label
@@ -52,45 +52,24 @@ Sorted by:
 
 {txt}   Stats {...}
 {c |}{...}
-       WTP       HEL    WTP_PH       LEL    WTP_PL       v11  someon~e  WTP_high
-{hline 9}{c +}{hline 80}
+       WTP       HEL    WTP_PH       LEL    WTP_PL       v11  someon~e  WTP_high   WTP_low  wtpHig~n
+{hline 9}{c +}{hline 100}
 {ralign 8:Mean} {...}
 {c |}{...}
- {res}    12.48      3.72     10.48       4.8      3.72         1         1     124.8
+ {res}    12.48      3.72     10.48       4.8      3.72         1         1     124.8      6.02        .5
 {txt}{ralign 8:SD} {...}
 {c |}{...}
- {res} 19.93381  2.525206  19.93974  3.291403   7.18517         0         0  199.3381
+ {res} 19.93381  2.525206  19.93974  3.291403   7.18517         0         0  199.3381  10.04376  .5050763
 {txt}{ralign 8:Min} {...}
 {c |}{...}
- {res}        1         1         0         1         0         1         1        10
+ {res}        1         1         0         1         0         1         1        10         0         0
 {txt}{ralign 8:Max} {...}
 {c |}{...}
- {res}      100        10       101        10        33         1         1      1000
+ {res}      100        10       101        10        33         1         1      1000        50         1
 {txt}{ralign 8:N} {...}
 {c |}{...}
- {res}       50        25        25        25        25        50        50        50
-{txt}{hline 9}{c BT}{hline 80}
-
-   Stats {...}
-{c |}{...}
-   WTP_low  wtpHig~n
-{hline 9}{c +}{hline 20}
-{ralign 8:Mean} {...}
-{c |}{...}
- {res}     6.02        .5
-{txt}{ralign 8:SD} {...}
-{c |}{...}
- {res} 10.04376  .5050763
-{txt}{ralign 8:Min} {...}
-{c |}{...}
- {res}        0         0
-{txt}{ralign 8:Max} {...}
-{c |}{...}
- {res}       50         1
-{txt}{ralign 8:N} {...}
-{c |}{...}
- {res}       50        50
-{txt}{hline 9}{c BT}{hline 20}
+ {res}       50        25        25        25        25        50        50        50        50        50
+{txt}{hline 9}{c BT}{hline 100}
 
 {com}. 
 . 
@@ -106,18 +85,17 @@ Sorted by:
 {txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.1370
 {txt}       Total {c |} {res}    11352.5        49  231.683673   {txt}Root MSE        =   {res}  14.14
 
-{txt}{hline 22}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
-{col 1}          destroy_var{col 23}{c |} Coefficient{col 35}  Std. err.{col 47}      t{col 55}   P>|t|{col 63}     [95% con{col 76}f. interval]
-{hline 22}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
-{space 13}envy_var {c |}{col 23}{res}{space 2} .7446154{col 35}{space 2} .8769454{col 46}{space 1}    0.85{col 55}{space 3}0.400{col 63}{space 4}-1.020584{col 76}{space 3} 2.509815
-{txt}1.wtpHighLowCondition {c |}{col 23}{res}{space 2}-1.074754{col 35}{space 2} 7.196837{col 46}{space 1}   -0.15{col 55}{space 3}0.882{col 63}{space 4}-15.56123{col 76}{space 3} 13.41173
-{txt}{space 21} {c |}
-{space 2}wtpHighLowCondition#{c |}
-{space 11}c.envy_var {c |}
-{space 19}1  {c |}{col 23}{res}{space 2} 2.322295{col 35}{space 2} 1.440675{col 46}{space 1}    1.61{col 55}{space 3}0.114{col 63}{space 4}-.5776339{col 76}{space 3} 5.222224
-{txt}{space 21} {c |}
-{space 16}_cons {c |}{col 23}{res}{space 2} .1458462{col 35}{space 2} 5.071141{col 46}{space 1}    0.03{col 55}{space 3}0.977{col 63}{space 4}-10.06183{col 76}{space 3} 10.35352
-{txt}{hline 22}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{txt}{hline 31}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}                   destroy_var{col 32}{c |} Coefficient{col 44}  Std. err.{col 56}      t{col 64}   P>|t|{col 72}     [95% con{col 85}f. interval]
+{hline 31}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 22}envy_var {c |}{col 32}{res}{space 2} .7446154{col 44}{space 2} .8769454{col 55}{space 1}    0.85{col 64}{space 3}0.400{col 72}{space 4}-1.020584{col 85}{space 3} 2.509815
+{txt}{space 9}1.wtpHighLowCondition {c |}{col 32}{res}{space 2}-1.074754{col 44}{space 2} 7.196837{col 55}{space 1}   -0.15{col 64}{space 3}0.882{col 72}{space 4}-15.56123{col 85}{space 3} 13.41173
+{txt}{space 30} {c |}
+wtpHighLowCondition#c.envy_var {c |}
+{space 28}1  {c |}{col 32}{res}{space 2} 2.322295{col 44}{space 2} 1.440675{col 55}{space 1}    1.61{col 64}{space 3}0.114{col 72}{space 4}-.5776339{col 85}{space 3} 5.222224
+{txt}{space 30} {c |}
+{space 25}_cons {c |}{col 32}{res}{space 2} .1458462{col 44}{space 2} 5.071141{col 55}{space 1}    0.03{col 64}{space 3}0.977{col 72}{space 4}-10.06183{col 85}{space 3} 10.35352
+{txt}{hline 31}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}{txt}
 {com}. reg destroy_var c.envy_var##i.wtpHighLowCondition WTP
 
@@ -128,19 +106,18 @@ Sorted by:
 {txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.1435
 {txt}       Total {c |} {res}    11352.5        49  231.683673   {txt}Root MSE        =   {res} 14.087
 
-{txt}{hline 22}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
-{col 1}          destroy_var{col 23}{c |} Coefficient{col 35}  Std. err.{col 47}      t{col 55}   P>|t|{col 63}     [95% con{col 76}f. interval]
-{hline 22}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
-{space 13}envy_var {c |}{col 23}{res}{space 2} 1.198406{col 35}{space 2} .9570137{col 46}{space 1}    1.25{col 55}{space 3}0.217{col 63}{space 4}-.7291188{col 76}{space 3}  3.12593
-{txt}1.wtpHighLowCondition {c |}{col 23}{res}{space 2}-.8006874{col 35}{space 2} 7.173561{col 46}{space 1}   -0.11{col 55}{space 3}0.912{col 63}{space 4}-15.24898{col 76}{space 3} 13.64761
-{txt}{space 21} {c |}
-{space 2}wtpHighLowCondition#{c |}
-{space 11}c.envy_var {c |}
-{space 19}1  {c |}{col 23}{res}{space 2} 2.377439{col 35}{space 2} 1.436024{col 46}{space 1}    1.66{col 55}{space 3}0.105{col 63}{space 4}-.5148615{col 76}{space 3}  5.26974
-{txt}{space 21} {c |}
-{space 18}WTP {c |}{col 23}{res}{space 2}-.1361476{col 35}{space 2} .1172146{col 46}{space 1}   -1.16{col 55}{space 3}0.252{col 63}{space 4}-.3722299{col 76}{space 3} .0999347
-{txt}{space 16}_cons {c |}{col 23}{res}{space 2}-.3277798{col 35}{space 2} 5.068434{col 46}{space 1}   -0.06{col 55}{space 3}0.949{col 63}{space 4}-10.53613{col 76}{space 3}  9.88057
-{txt}{hline 22}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{txt}{hline 31}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}                   destroy_var{col 32}{c |} Coefficient{col 44}  Std. err.{col 56}      t{col 64}   P>|t|{col 72}     [95% con{col 85}f. interval]
+{hline 31}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 22}envy_var {c |}{col 32}{res}{space 2} 1.198406{col 44}{space 2} .9570137{col 55}{space 1}    1.25{col 64}{space 3}0.217{col 72}{space 4}-.7291188{col 85}{space 3}  3.12593
+{txt}{space 9}1.wtpHighLowCondition {c |}{col 32}{res}{space 2}-.8006874{col 44}{space 2} 7.173561{col 55}{space 1}   -0.11{col 64}{space 3}0.912{col 72}{space 4}-15.24898{col 85}{space 3} 13.64761
+{txt}{space 30} {c |}
+wtpHighLowCondition#c.envy_var {c |}
+{space 28}1  {c |}{col 32}{res}{space 2} 2.377439{col 44}{space 2} 1.436024{col 55}{space 1}    1.66{col 64}{space 3}0.105{col 72}{space 4}-.5148615{col 85}{space 3}  5.26974
+{txt}{space 30} {c |}
+{space 27}WTP {c |}{col 32}{res}{space 2}-.1361476{col 44}{space 2} .1172146{col 55}{space 1}   -1.16{col 64}{space 3}0.252{col 72}{space 4}-.3722299{col 85}{space 3} .0999347
+{txt}{space 25}_cons {c |}{col 32}{res}{space 2}-.3277798{col 44}{space 2} 5.068434{col 55}{space 1}   -0.06{col 64}{space 3}0.949{col 72}{space 4}-10.53613{col 85}{space 3}  9.88057
+{txt}{hline 31}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}{txt}
 {com}. 
 . 
@@ -165,23 +142,23 @@ Combined {c |}{res}{col 12}     50{col 22}     4.26{col 34} .4177784{col 46} 2.9
 {txt}
 {com}. log off
       {txt}name:  {res}<unnamed>
-       {txt}log:  {res}C:\Users\winkley\Documents\Alex Research\SocialComparison\Scripts\../Log Files/summarylog_envy_2.smcl
+       {txt}log:  {res}C:\Users\Myles\OneDrive\Documents\Alex Research\SocialComparison\Scripts\../Log Files/summarylog_envy_2.smcl
   {txt}log type:  {res}smcl
- {txt}paused on:  {res} 4 Oct 2024, 15:03:18
+ {txt}paused on:  {res} 5 Oct 2024, 22:31:41
 {txt}{.-}
 {smcl}
 {txt}{sf}{ul off}{smcl}
 {com}{sf}{ul off}{txt}{.-}
       name:  {res}<unnamed>
-       {txt}log:  {res}C:\Users\winkley\Documents\Alex Research\SocialComparison\Scripts\../Log Files/summarylog_envy_2.smcl
+       {txt}log:  {res}C:\Users\Myles\OneDrive\Documents\Alex Research\SocialComparison\Scripts\../Log Files/summarylog_envy_2.smcl
   {txt}log type:  {res}smcl
-{txt}resumed on:  {res} 4 Oct 2024, 15:03:18
+{txt}resumed on:  {res} 5 Oct 2024, 22:31:41
 {txt}
 {com}. 
 . /*
 > Envy 2 V10:
 > 
-> Key variation: eliciting WTP to prevent High/Low WTP participant receiving your second favorite painting **following** them already having received your favorite. Your second favorite painting is rated highly by *both* participants
+> Key variation: soliciting WTP to prevent High/Low WTP participant receiving your second favorite painting **following** them already having received your favorite. Your second favorite painting is rated highly by *both* participants
 > 
 > Rank of Prevented Painting: Second Favorite
 > 
@@ -197,7 +174,7 @@ Combined {c |}{res}{col 12}     50{col 22}     4.26{col 34} .4177784{col 46} 2.9
 
 {txt}Contains data from {res}..\Clean STATA Files\Envy_2_V10_clean.dta
 {txt} Observations:{res}           103                  
-{txt}    Variables:{res}            17                  4 Oct 2024 15:03
+{txt}    Variables:{res}            17                  5 Oct 2024 22:31
 {txt}{hline}
 Variable      Storage   Display    Value
     name         type    format    label      Variable label
@@ -228,45 +205,24 @@ Sorted by:
 
 {txt}   Stats {...}
 {c |}{...}
-       WTP       HEL    WTP_PH       LEL    WTP_PL       v10  someon~e  WTP_high
-{hline 9}{c +}{hline 80}
+       WTP       HEL    WTP_PH       LEL    WTP_PL       v10  someon~e  WTP_high   WTP_low  wtpHig~n
+{hline 9}{c +}{hline 100}
 {ralign 8:Mean} {...}
 {c |}{...}
- {res}  24.8932  4.117647  464.0588  4.730769  28.09615         1         1   248.932
+ {res}  24.8932  4.117647  464.0588  4.730769  28.09615         1         1   248.932  12.19417  .4951456
 {txt}{ralign 8:SD} {...}
 {c |}{...}
- {res}  100.082  2.875045  2794.366  3.017046  78.19163         0         0   1000.82
+ {res}  100.082  2.875045  2794.366  3.017046  78.19163         0         0   1000.82  50.08817  .5024213
 {txt}{ralign 8:Min} {...}
 {c |}{...}
- {res}        1         1         0         1         0         1         1        10
+ {res}        1         1         0         1         0         1         1        10         0         0
 {txt}{ralign 8:Max} {...}
 {c |}{...}
- {res}     1000         9     20000        10       401         1         1     10000
+ {res}     1000         9     20000        10       401         1         1     10000       500         1
 {txt}{ralign 8:N} {...}
 {c |}{...}
- {res}      103        51        51        52        52       103       103       103
-{txt}{hline 9}{c BT}{hline 80}
-
-   Stats {...}
-{c |}{...}
-   WTP_low  wtpHig~n
-{hline 9}{c +}{hline 20}
-{ralign 8:Mean} {...}
-{c |}{...}
- {res} 12.19417  .4951456
-{txt}{ralign 8:SD} {...}
-{c |}{...}
- {res} 50.08817  .5024213
-{txt}{ralign 8:Min} {...}
-{c |}{...}
- {res}        0         0
-{txt}{ralign 8:Max} {...}
-{c |}{...}
- {res}      500         1
-{txt}{ralign 8:N} {...}
-{c |}{...}
- {res}      103       103
-{txt}{hline 9}{c BT}{hline 20}
+ {res}      103        51        51        52        52       103       103       103       103       103
+{txt}{hline 9}{c BT}{hline 100}
 
 {com}. 
 . 
@@ -282,18 +238,17 @@ Sorted by:
 {txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.1582
 {txt}       Total {c |} {res}     369984        97  3814.26804   {txt}Root MSE        =   {res} 56.665
 
-{txt}{hline 22}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
-{col 1}          destroy_var{col 23}{c |} Coefficient{col 35}  Std. err.{col 47}      t{col 55}   P>|t|{col 63}     [95% con{col 76}f. interval]
-{hline 22}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
-{space 13}envy_var {c |}{col 23}{res}{space 2} .6853213{col 35}{space 2} 2.644955{col 46}{space 1}    0.26{col 55}{space 3}0.796{col 63}{space 4}-4.566298{col 76}{space 3} 5.936941
-{txt}1.wtpHighLowCondition {c |}{col 23}{res}{space 2} -29.1391{col 35}{space 2} 20.67623{col 46}{space 1}   -1.41{col 55}{space 3}0.162{col 63}{space 4}-70.19224{col 76}{space 3} 11.91404
-{txt}{space 21} {c |}
-{space 2}wtpHighLowCondition#{c |}
-{space 11}c.envy_var {c |}
-{space 19}1  {c |}{col 23}{res}{space 2}  12.6275{col 35}{space 2} 4.075606{col 46}{space 1}    3.10{col 55}{space 3}0.003{col 63}{space 4} 4.535285{col 76}{space 3} 20.71971
-{txt}{space 21} {c |}
-{space 16}_cons {c |}{col 23}{res}{space 2} 17.57271{col 35}{space 2} 14.71717{col 46}{space 1}    1.19{col 55}{space 3}0.235{col 63}{space 4}-11.64857{col 76}{space 3} 46.79399
-{txt}{hline 22}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{txt}{hline 31}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}                   destroy_var{col 32}{c |} Coefficient{col 44}  Std. err.{col 56}      t{col 64}   P>|t|{col 72}     [95% con{col 85}f. interval]
+{hline 31}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 22}envy_var {c |}{col 32}{res}{space 2} .6853213{col 44}{space 2} 2.644955{col 55}{space 1}    0.26{col 64}{space 3}0.796{col 72}{space 4}-4.566298{col 85}{space 3} 5.936941
+{txt}{space 9}1.wtpHighLowCondition {c |}{col 32}{res}{space 2} -29.1391{col 44}{space 2} 20.67623{col 55}{space 1}   -1.41{col 64}{space 3}0.162{col 72}{space 4}-70.19224{col 85}{space 3} 11.91404
+{txt}{space 30} {c |}
+wtpHighLowCondition#c.envy_var {c |}
+{space 28}1  {c |}{col 32}{res}{space 2}  12.6275{col 44}{space 2} 4.075606{col 55}{space 1}    3.10{col 64}{space 3}0.003{col 72}{space 4} 4.535285{col 85}{space 3} 20.71971
+{txt}{space 30} {c |}
+{space 25}_cons {c |}{col 32}{res}{space 2} 17.57271{col 44}{space 2} 14.71717{col 55}{space 1}    1.19{col 64}{space 3}0.235{col 72}{space 4}-11.64857{col 85}{space 3} 46.79399
+{txt}{hline 31}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}{txt}
 {com}. reg destroy_var c.envy_var##i.wtpHighLowCondition WTP
 
@@ -304,19 +259,18 @@ Sorted by:
 {txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.3432
 {txt}       Total {c |} {res}     369984        97  3814.26804   {txt}Root MSE        =   {res} 50.052
 
-{txt}{hline 22}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
-{col 1}          destroy_var{col 23}{c |} Coefficient{col 35}  Std. err.{col 47}      t{col 55}   P>|t|{col 63}     [95% con{col 76}f. interval]
-{hline 22}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
-{space 13}envy_var {c |}{col 23}{res}{space 2} .4132123{col 35}{space 2} 2.336834{col 46}{space 1}    0.18{col 55}{space 3}0.860{col 63}{space 4}-4.227277{col 76}{space 3} 5.053701
-{txt}1.wtpHighLowCondition {c |}{col 23}{res}{space 2}-12.90327{col 35}{space 2} 18.52381{col 46}{space 1}   -0.70{col 55}{space 3}0.488{col 63}{space 4}-49.68788{col 76}{space 3} 23.88135
-{txt}{space 21} {c |}
-{space 2}wtpHighLowCondition#{c |}
-{space 11}c.envy_var {c |}
-{space 19}1  {c |}{col 23}{res}{space 2} 10.17815{col 35}{space 2} 3.630128{col 46}{space 1}    2.80{col 55}{space 3}0.006{col 63}{space 4} 2.969438{col 76}{space 3} 17.38687
-{txt}{space 21} {c |}
-{space 18}WTP {c |}{col 23}{res}{space 2} 1.281337{col 35}{space 2} .2444204{col 46}{space 1}    5.24{col 55}{space 3}0.000{col 63}{space 4} .7959667{col 76}{space 3} 1.766708
-{txt}{space 16}_cons {c |}{col 23}{res}{space 2}-1.050526{col 35}{space 2} 13.47616{col 46}{space 1}   -0.08{col 55}{space 3}0.938{col 63}{space 4}-27.81151{col 76}{space 3} 25.71046
-{txt}{hline 22}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{txt}{hline 31}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}                   destroy_var{col 32}{c |} Coefficient{col 44}  Std. err.{col 56}      t{col 64}   P>|t|{col 72}     [95% con{col 85}f. interval]
+{hline 31}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 22}envy_var {c |}{col 32}{res}{space 2} .4132123{col 44}{space 2} 2.336834{col 55}{space 1}    0.18{col 64}{space 3}0.860{col 72}{space 4}-4.227277{col 85}{space 3} 5.053701
+{txt}{space 9}1.wtpHighLowCondition {c |}{col 32}{res}{space 2}-12.90327{col 44}{space 2} 18.52381{col 55}{space 1}   -0.70{col 64}{space 3}0.488{col 72}{space 4}-49.68788{col 85}{space 3} 23.88135
+{txt}{space 30} {c |}
+wtpHighLowCondition#c.envy_var {c |}
+{space 28}1  {c |}{col 32}{res}{space 2} 10.17815{col 44}{space 2} 3.630128{col 55}{space 1}    2.80{col 64}{space 3}0.006{col 72}{space 4} 2.969438{col 85}{space 3} 17.38687
+{txt}{space 30} {c |}
+{space 27}WTP {c |}{col 32}{res}{space 2} 1.281337{col 44}{space 2} .2444204{col 55}{space 1}    5.24{col 64}{space 3}0.000{col 72}{space 4} .7959667{col 85}{space 3} 1.766708
+{txt}{space 25}_cons {c |}{col 32}{res}{space 2}-1.050526{col 44}{space 2} 13.47616{col 55}{space 1}   -0.08{col 64}{space 3}0.938{col 72}{space 4}-27.81151{col 85}{space 3} 25.71046
+{txt}{hline 31}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}{txt}
 {com}. 
 . ttest destroy_var, by(wtpHighLowCondition)
@@ -360,17 +314,17 @@ Combined {c |}{res}{col 12}    103{col 22} 4.427184{col 34} .2905983{col 46}  2.
 {com}. 
 . log off
       {txt}name:  {res}<unnamed>
-       {txt}log:  {res}C:\Users\winkley\Documents\Alex Research\SocialComparison\Scripts\../Log Files/summarylog_envy_2.smcl
+       {txt}log:  {res}C:\Users\Myles\OneDrive\Documents\Alex Research\SocialComparison\Scripts\../Log Files/summarylog_envy_2.smcl
   {txt}log type:  {res}smcl
- {txt}paused on:  {res} 4 Oct 2024, 15:03:18
+ {txt}paused on:  {res} 5 Oct 2024, 22:31:41
 {txt}{.-}
 {smcl}
 {txt}{sf}{ul off}{smcl}
 {com}{sf}{ul off}{txt}{.-}
       name:  {res}<unnamed>
-       {txt}log:  {res}C:\Users\winkley\Documents\Alex Research\SocialComparison\Scripts\../Log Files/summarylog_envy_2.smcl
+       {txt}log:  {res}C:\Users\Myles\OneDrive\Documents\Alex Research\SocialComparison\Scripts\../Log Files/summarylog_envy_2.smcl
   {txt}log type:  {res}smcl
-{txt}resumed on:  {res} 4 Oct 2024, 15:03:18
+{txt}resumed on:  {res} 5 Oct 2024, 22:31:41
 {txt}
 {com}. 
 . /*
@@ -389,7 +343,7 @@ Combined {c |}{res}{col 12}    103{col 22} 4.427184{col 34} .2905983{col 46}  2.
 
 {txt}Contains data from {res}..\Clean STATA Files\Envy_2_V9_clean.dta
 {txt} Observations:{res}            51                  
-{txt}    Variables:{res}            17                  4 Oct 2024 15:03
+{txt}    Variables:{res}            17                  5 Oct 2024 22:31
 {txt}{hline}
 Variable      Storage   Display    Value
     name         type    format    label      Variable label
@@ -419,45 +373,24 @@ Sorted by:
 
 {txt}   Stats {...}
 {c |}{...}
-       WTP    WTP_PH       DPH    WTP_PL       DPL        v9  someon~e  WTP_high
-{hline 9}{c +}{hline 80}
+       WTP    WTP_PH       DPH    WTP_PL       DPL        v9  someon~e  WTP_high   WTP_low  wtpHig~n
+{hline 9}{c +}{hline 100}
 {ralign 8:Mean} {...}
 {c |}{...}
- {res} 13.15686  11.34615  3.115385      6.04      5.04         1         0  131.5686
+ {res} 13.15686  11.34615  3.115385      6.04      5.04         1         0  131.5686  6.352941  .5098039
 {txt}{ralign 8:SD} {...}
 {c |}{...}
- {res} 18.89484   21.0427  2.790368  7.557998  2.850146         0         0  188.9484
+ {res} 18.89484   21.0427  2.790368  7.557998  2.850146         0         0  188.9484  9.501207  .5048782
 {txt}{ralign 8:Min} {...}
 {c |}{...}
- {res}        1         0         1         0         1         1         0        10
+ {res}        1         0         1         0         1         1         0        10         0         0
 {txt}{ralign 8:Max} {...}
 {c |}{...}
- {res}      100       100        10        28         9         1         0      1000
+ {res}      100       100        10        28         9         1         0      1000        50         1
 {txt}{ralign 8:N} {...}
 {c |}{...}
- {res}       51        26        26        25        25        51        51        51
-{txt}{hline 9}{c BT}{hline 80}
-
-   Stats {...}
-{c |}{...}
-   WTP_low  wtpHig~n
-{hline 9}{c +}{hline 20}
-{ralign 8:Mean} {...}
-{c |}{...}
- {res} 6.352941  .5098039
-{txt}{ralign 8:SD} {...}
-{c |}{...}
- {res} 9.501207  .5048782
-{txt}{ralign 8:Min} {...}
-{c |}{...}
- {res}        0         0
-{txt}{ralign 8:Max} {...}
-{c |}{...}
- {res}       50         1
-{txt}{ralign 8:N} {...}
-{c |}{...}
- {res}       51        51
-{txt}{hline 9}{c BT}{hline 20}
+ {res}       51        26        26        25        25        51        51        51        51        51
+{txt}{hline 9}{c BT}{hline 100}
 
 {com}. 
 . 
@@ -473,18 +406,17 @@ Sorted by:
 {txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.4012
 {txt}       Total {c |} {res} 12799.6863        50  255.993725   {txt}Root MSE        =   {res} 12.381
 
-{txt}{hline 22}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
-{col 1}          destroy_var{col 23}{c |} Coefficient{col 35}  Std. err.{col 47}      t{col 55}   P>|t|{col 63}     [95% con{col 76}f. interval]
-{hline 22}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
-{space 15}dp_var {c |}{col 23}{res}{space 2} .9076734{col 35}{space 2} .8867228{col 46}{space 1}    1.02{col 55}{space 3}0.311{col 63}{space 4}-.8761829{col 76}{space 3}  2.69153
-{txt}1.wtpHighLowCondition {c |}{col 23}{res}{space 2}-6.027271{col 35}{space 2} 6.296316{col 46}{space 1}   -0.96{col 55}{space 3}0.343{col 63}{space 4}-18.69382{col 76}{space 3} 6.639283
-{txt}{space 21} {c |}
-{space 2}wtpHighLowCondition#{c |}
-{space 13}c.dp_var {c |}
-{space 19}1  {c |}{col 23}{res}{space 2}  4.19863{col 35}{space 2} 1.254508{col 46}{space 1}    3.35{col 55}{space 3}0.002{col 63}{space 4} 1.674884{col 76}{space 3} 6.722375
-{txt}{space 21} {c |}
-{space 16}_cons {c |}{col 23}{res}{space 2} 1.465326{col 35}{space 2} 5.109247{col 46}{space 1}    0.29{col 55}{space 3}0.776{col 63}{space 4}-8.813154{col 76}{space 3} 11.74381
-{txt}{hline 22}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{txt}{hline 29}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}                 destroy_var{col 30}{c |} Coefficient{col 42}  Std. err.{col 54}      t{col 62}   P>|t|{col 70}     [95% con{col 83}f. interval]
+{hline 29}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 22}dp_var {c |}{col 30}{res}{space 2} .9076734{col 42}{space 2} .8867228{col 53}{space 1}    1.02{col 62}{space 3}0.311{col 70}{space 4}-.8761829{col 83}{space 3}  2.69153
+{txt}{space 7}1.wtpHighLowCondition {c |}{col 30}{res}{space 2}-6.027271{col 42}{space 2} 6.296316{col 53}{space 1}   -0.96{col 62}{space 3}0.343{col 70}{space 4}-18.69382{col 83}{space 3} 6.639283
+{txt}{space 28} {c |}
+wtpHighLowCondition#c.dp_var {c |}
+{space 26}1  {c |}{col 30}{res}{space 2}  4.19863{col 42}{space 2} 1.254508{col 53}{space 1}    3.35{col 62}{space 3}0.002{col 70}{space 4} 1.674884{col 83}{space 3} 6.722375
+{txt}{space 28} {c |}
+{space 23}_cons {c |}{col 30}{res}{space 2} 1.465326{col 42}{space 2} 5.109247{col 53}{space 1}    0.29{col 62}{space 3}0.776{col 70}{space 4}-8.813154{col 83}{space 3} 11.74381
+{txt}{hline 29}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}{txt}
 {com}. reg destroy_var c.dp_var##i.wtpHighLowCondition WTP
 
@@ -495,19 +427,18 @@ Sorted by:
 {txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.5191
 {txt}       Total {c |} {res} 12799.6863        50  255.993725   {txt}Root MSE        =   {res} 11.095
 
-{txt}{hline 22}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
-{col 1}          destroy_var{col 23}{c |} Coefficient{col 35}  Std. err.{col 47}      t{col 55}   P>|t|{col 63}     [95% con{col 76}f. interval]
-{hline 22}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
-{space 15}dp_var {c |}{col 23}{res}{space 2} .9212791{col 35}{space 2} .7946119{col 46}{space 1}    1.16{col 55}{space 3}0.252{col 63}{space 4}-.6781917{col 76}{space 3}  2.52075
-{txt}1.wtpHighLowCondition {c |}{col 23}{res}{space 2}-7.498854{col 35}{space 2} 5.657497{col 46}{space 1}   -1.33{col 55}{space 3}0.192{col 63}{space 4}-18.88681{col 76}{space 3} 3.889098
-{txt}{space 21} {c |}
-{space 2}wtpHighLowCondition#{c |}
-{space 13}c.dp_var {c |}
-{space 19}1  {c |}{col 23}{res}{space 2} 4.269901{col 35}{space 2}  1.12436{col 46}{space 1}    3.80{col 55}{space 3}0.000{col 63}{space 4} 2.006682{col 76}{space 3}  6.53312
-{txt}{space 21} {c |}
-{space 18}WTP {c |}{col 23}{res}{space 2} .2960462{col 35}{space 2} .0836364{col 46}{space 1}    3.54{col 55}{space 3}0.001{col 63}{space 4} .1276949{col 76}{space 3} .4643975
-{txt}{space 16}_cons {c |}{col 23}{res}{space 2}-1.847913{col 35}{space 2} 4.673158{col 46}{space 1}   -0.40{col 55}{space 3}0.694{col 63}{space 4}-11.25449{col 76}{space 3} 7.558666
-{txt}{hline 22}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{txt}{hline 29}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}                 destroy_var{col 30}{c |} Coefficient{col 42}  Std. err.{col 54}      t{col 62}   P>|t|{col 70}     [95% con{col 83}f. interval]
+{hline 29}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 22}dp_var {c |}{col 30}{res}{space 2} .9212791{col 42}{space 2} .7946119{col 53}{space 1}    1.16{col 62}{space 3}0.252{col 70}{space 4}-.6781917{col 83}{space 3}  2.52075
+{txt}{space 7}1.wtpHighLowCondition {c |}{col 30}{res}{space 2}-7.498854{col 42}{space 2} 5.657497{col 53}{space 1}   -1.33{col 62}{space 3}0.192{col 70}{space 4}-18.88681{col 83}{space 3} 3.889098
+{txt}{space 28} {c |}
+wtpHighLowCondition#c.dp_var {c |}
+{space 26}1  {c |}{col 30}{res}{space 2} 4.269901{col 42}{space 2}  1.12436{col 53}{space 1}    3.80{col 62}{space 3}0.000{col 70}{space 4} 2.006682{col 83}{space 3}  6.53312
+{txt}{space 28} {c |}
+{space 25}WTP {c |}{col 30}{res}{space 2} .2960462{col 42}{space 2} .0836364{col 53}{space 1}    3.54{col 62}{space 3}0.001{col 70}{space 4} .1276949{col 83}{space 3} .4643975
+{txt}{space 23}_cons {c |}{col 30}{res}{space 2}-1.847913{col 42}{space 2} 4.673158{col 53}{space 1}   -0.40{col 62}{space 3}0.694{col 70}{space 4}-11.25449{col 83}{space 3} 7.558666
+{txt}{hline 29}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}{txt}
 {com}. 
 . 
@@ -532,17 +463,199 @@ Combined {c |}{res}{col 12}     51{col 22} 4.058824{col 34} .4138881{col 46} 2.9
 {txt}
 {com}. log off
       {txt}name:  {res}<unnamed>
-       {txt}log:  {res}C:\Users\winkley\Documents\Alex Research\SocialComparison\Scripts\../Log Files/summarylog_envy_2.smcl
+       {txt}log:  {res}C:\Users\Myles\OneDrive\Documents\Alex Research\SocialComparison\Scripts\../Log Files/summarylog_envy_2.smcl
   {txt}log type:  {res}smcl
- {txt}paused on:  {res} 4 Oct 2024, 15:03:18
+ {txt}paused on:  {res} 5 Oct 2024, 22:31:41
 {txt}{.-}
 {smcl}
 {txt}{sf}{ul off}{smcl}
 {com}{sf}{ul off}{txt}{.-}
       name:  {res}<unnamed>
-       {txt}log:  {res}C:\Users\winkley\Documents\Alex Research\SocialComparison\Scripts\../Log Files/summarylog_envy_2.smcl
+       {txt}log:  {res}C:\Users\Myles\OneDrive\Documents\Alex Research\SocialComparison\Scripts\../Log Files/summarylog_envy_2.smcl
   {txt}log type:  {res}smcl
-{txt}resumed on:  {res} 4 Oct 2024, 15:03:18
+{txt}resumed on:  {res} 5 Oct 2024, 22:31:41
+{txt}
+{com}. 
+. 
+. /*
+> Envy 2 V7:
+> 
+> Key variation: soliciting WTP to prevent participant from receiving the painting **following** that High/Low WTP participant receiving your favorite painting.
+> 
+> Rank of Prevented Painting: Second Favorite
+> 
+> Within/Between: Within
+> 
+> Summary Statistics for Envy 2 V7:
+> */
+. 
+. describe, full
+
+{txt}Contains data from {res}..\Clean STATA Files\Envy_2_V7_clean.dta
+{txt} Observations:{res}           100                  
+{txt}    Variables:{res}             7                  5 Oct 2024 22:31
+{txt}{hline}
+Variable      Storage   Display    Value
+    name         type    format    label      Variable label
+{hline}
+{p 0 48}{res}{bind:PROLIFIC_PID   }{txt}{bind: str24   }{bind:%24s      }{space 1}{bind:         }{bind:  }{res}{res}PROLIFIC_PID{p_end}
+{p 0 48}{bind:hypothetical   }{txt}{bind: byte    }{bind:%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}=1 if other particip High WTP =0 if Low {p_end}
+{p 0 48}{bind:WTP            }{txt}{bind: byte    }{bind:%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}WTP for favorite painting{p_end}
+{p 0 48}{bind:Envy_Level     }{txt}{bind: byte    }{bind:%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}Envy Level (0-10) if other participant received for free (hypo){p_end}
+{p 0 48}{bind:WTP_Prevent    }{txt}{bind: int     }{bind:%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}WTP in tasks to prevent participant from receiving for free{p_end}
+{p 0 48}{bind:WTP_high       }{txt}{bind: int     }{bind:%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}WTP of High WTP participant{p_end}
+{p 0 48}{bind:WTP_low        }{txt}{bind: byte    }{bind:%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}WTP of Low WTP participant{p_end}
+{txt}{hline}
+Sorted by: {res}PROLIFIC_PID
+{txt}
+{com}. bysort hypothetical: tabstat WTP_Prevent Envy_Level, stats(mean sd min max n)
+
+{txt}{hline}
+-> hypothetical = 0
+
+   Stats {...}
+{c |}{...}
+  WTP_Pr~t  Envy_L~l
+{hline 9}{c +}{hline 20}
+{ralign 8:Mean} {...}
+{c |}{...}
+ {res}     6.52      4.28
+{txt}{ralign 8:SD} {...}
+{c |}{...}
+ {res} 11.80149  3.213746
+{txt}{ralign 8:Min} {...}
+{c |}{...}
+ {res}        0         0
+{txt}{ralign 8:Max} {...}
+{c |}{...}
+ {res}       50        10
+{txt}{ralign 8:N} {...}
+{c |}{...}
+ {res}       50        50
+{txt}{hline 9}{c BT}{hline 20}
+
+{hline}
+-> hypothetical = 1
+
+   Stats {...}
+{c |}{...}
+  WTP_Pr~t  Envy_L~l
+{hline 9}{c +}{hline 20}
+{ralign 8:Mean} {...}
+{c |}{...}
+ {res}    21.56      3.74
+{txt}{ralign 8:SD} {...}
+{c |}{...}
+ {res} 103.6557  3.355227
+{txt}{ralign 8:Min} {...}
+{c |}{...}
+ {res}        0         0
+{txt}{ralign 8:Max} {...}
+{c |}{...}
+ {res}      731        10
+{txt}{ralign 8:N} {...}
+{c |}{...}
+ {res}       50        50
+{txt}{hline 9}{c BT}{hline 20}
+
+{com}. 
+. 
+. reg WTP_Prevent c.Envy_Level##i.hypothetical
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       100
+{txt}{hline 13}{c +}{hline 34}   F(3, 96)        = {res}     1.03
+{txt}       Model {c |} {res} 16808.6611         3  5602.88704   {txt}Prob > F        ={res}    0.3829
+{txt}    Residual {c |} {res} 522151.179        96  5439.07478   {txt}R-squared       ={res}    0.0312
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.0009
+{txt}       Total {c |} {res}  538959.84        99  5444.03879   {txt}Root MSE        =   {res}  73.75
+
+{txt}{hline 26}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}              WTP_Prevent{col 27}{c |} Coefficient{col 39}  Std. err.{col 51}      t{col 59}   P>|t|{col 67}     [95% con{col 80}f. interval]
+{hline 26}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 15}Envy_Level {c |}{col 27}{res}{space 2} 1.254189{col 39}{space 2} 3.278332{col 50}{space 1}    0.38{col 59}{space 3}0.703{col 67}{space 4}-5.253248{col 80}{space 3} 7.761627
+{txt}{space 11}1.hypothetical {c |}{col 27}{res}{space 2}  4.20176{col 39}{space 2} 23.50233{col 50}{space 1}    0.18{col 59}{space 3}0.858{col 67}{space 4}   -42.45{col 80}{space 3} 50.85352
+{txt}{space 25} {c |}
+hypothetical#c.Envy_Level {c |}
+{space 23}1  {c |}{col 27}{res}{space 2} 3.079011{col 39}{space 2} 4.539564{col 50}{space 1}    0.68{col 59}{space 3}0.499{col 67}{space 4}-5.931953{col 80}{space 3} 12.08998
+{txt}{space 25} {c |}
+{space 20}_cons {c |}{col 27}{res}{space 2} 1.152071{col 39}{space 2} 17.48307{col 50}{space 1}    0.07{col 59}{space 3}0.948{col 67}{space 4}-33.55155{col 80}{space 3} 35.85569
+{txt}{hline 26}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}. reg WTP_Prevent c.Envy_Level##i.hypothetical WTP
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       100
+{txt}{hline 13}{c +}{hline 34}   F(4, 95)        = {res}     3.13
+{txt}       Model {c |} {res} 62750.3261         4  15687.5815   {txt}Prob > F        ={res}    0.0183
+{txt}    Residual {c |} {res} 476209.514        95  5012.73172   {txt}R-squared       ={res}    0.1164
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.0792
+{txt}       Total {c |} {res}  538959.84        99  5444.03879   {txt}Root MSE        =   {res} 70.801
+
+{txt}{hline 26}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}              WTP_Prevent{col 27}{c |} Coefficient{col 39}  Std. err.{col 51}      t{col 59}   P>|t|{col 67}     [95% con{col 80}f. interval]
+{hline 26}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 15}Envy_Level {c |}{col 27}{res}{space 2} .2674727{col 39}{space 2} 3.164056{col 50}{space 1}    0.08{col 59}{space 3}0.933{col 67}{space 4}-6.013972{col 80}{space 3} 6.548918
+{txt}{space 11}1.hypothetical {c |}{col 27}{res}{space 2} 12.91352{col 39}{space 2} 22.74519{col 50}{space 1}    0.57{col 59}{space 3}0.572{col 67}{space 4}-32.24139{col 80}{space 3} 58.06843
+{txt}{space 25} {c |}
+hypothetical#c.Envy_Level {c |}
+{space 23}1  {c |}{col 27}{res}{space 2} .6071967{col 39}{space 2} 4.433843{col 50}{space 1}    0.14{col 59}{space 3}0.891{col 67}{space 4}-8.195094{col 80}{space 3} 9.409488
+{txt}{space 25} {c |}
+{space 22}WTP {c |}{col 27}{res}{space 2} 1.068099{col 39}{space 2} .3528135{col 50}{space 1}    3.03{col 59}{space 3}0.003{col 67}{space 4} .3676752{col 80}{space 3} 1.768522
+{txt}{space 20}_cons {c |}{col 27}{res}{space 2}-15.26045{col 39}{space 2} 17.63774{col 50}{space 1}   -0.87{col 59}{space 3}0.389{col 67}{space 4}-50.27579{col 80}{space 3}  19.7549
+{txt}{hline 26}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}. 
+. ttest Envy_Level, by(hypothetical)
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. err.{col 47}Std. dev.{col 59}[95% conf. interval]
+{hline 9}{c +}{hline 68}
+       0 {c |}{res}{col 12}     50{col 22}     4.28{col 34} .4544923{col 46} 3.213746{col 58} 3.366663{col 70} 5.193337
+       {txt}1 {c |}{res}{col 12}     50{col 22}     3.74{col 34} .4745008{col 46} 3.355227{col 58} 2.786455{col 70} 4.693545
+{txt}{hline 9}{c +}{hline 68}
+Combined {c |}{res}{col 12}    100{col 22}     4.01{col 34} .3279859{col 46} 3.279859{col 58} 3.359205{col 70} 4.660795
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22}      .54{col 34} .6570497{col 58}-.7638937{col 70} 1.843894
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}0{txt}) - mean({res}1{txt})                                      t = {res}  0.8219
+{txt}H0: diff = 0                                     Degrees of freedom = {res}      98
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.7934         {txt}Pr(|T| > |t|) = {res}0.4132          {txt}Pr(T > t) = {res}0.2066
+{txt}
+{com}. ttest WTP_Prevent, by(hypothetical)
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. err.{col 47}Std. dev.{col 59}[95% conf. interval]
+{hline 9}{c +}{hline 68}
+       0 {c |}{res}{col 12}     50{col 22}     6.52{col 34} 1.668982{col 46} 11.80149{col 58} 3.166054{col 70} 9.873946
+       {txt}1 {c |}{res}{col 12}     50{col 22}    21.56{col 34} 14.65912{col 46} 103.6557{col 58}-7.898613{col 70} 51.01861
+{txt}{hline 9}{c +}{hline 68}
+Combined {c |}{res}{col 12}    100{col 22}    14.04{col 34} 7.378373{col 46} 73.78373{col 58}-.6002927{col 70} 28.68029
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22}   -15.04{col 34} 14.75383{col 58}-44.31849{col 70} 14.23849
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}0{txt}) - mean({res}1{txt})                                      t = {res} -1.0194
+{txt}H0: diff = 0                                     Degrees of freedom = {res}      98
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.1553         {txt}Pr(|T| > |t|) = {res}0.3105          {txt}Pr(T > t) = {res}0.8447
+{txt}
+{com}. 
+. log off
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\Myles\OneDrive\Documents\Alex Research\SocialComparison\Scripts\../Log Files/summarylog_envy_2.smcl
+  {txt}log type:  {res}smcl
+ {txt}paused on:  {res} 5 Oct 2024, 22:31:41
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\Myles\OneDrive\Documents\Alex Research\SocialComparison\Scripts\../Log Files/summarylog_envy_2.smcl
+  {txt}log type:  {res}smcl
+{txt}resumed on:  {res} 5 Oct 2024, 22:31:41
 {txt}
 {com}. 
 . /*
@@ -561,7 +674,7 @@ Combined {c |}{res}{col 12}     51{col 22} 4.058824{col 34} .4138881{col 46} 2.9
 
 {txt}Contains data from {res}..\Clean STATA Files\Envy_2_V4_clean.dta
 {txt} Observations:{res}           198                  
-{txt}    Variables:{res}             7                  4 Oct 2024 15:03
+{txt}    Variables:{res}             7                  5 Oct 2024 22:31
 {txt}{hline}
 Variable      Storage   Display    Value
     name         type    format    label      Variable label
@@ -640,18 +753,17 @@ Sorted by: {res}PROLIFIC_PID
 {txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.0807
 {txt}       Total {c |} {res} 336298.328       197  1707.09811   {txt}Root MSE        =   {res} 39.615
 
-{txt}{hline 15}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
-{col 1}   WTP_Prevent{col 16}{c |} Coefficient{col 28}  Std. err.{col 40}      t{col 48}   P>|t|{col 56}     [95% con{col 69}f. interval]
-{hline 15}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
-{space 4}Envy_Level {c |}{col 16}{res}{space 2} .8554531{col 28}{space 2}  1.18987{col 39}{space 1}    0.72{col 48}{space 3}0.473{col 56}{space 4}-1.491289{col 69}{space 3} 3.202195
-{txt}1.hypothetical {c |}{col 16}{res}{space 2} 4.797054{col 28}{space 2} 8.919617{col 39}{space 1}    0.54{col 48}{space 3}0.591{col 56}{space 4}-12.79482{col 69}{space 3} 22.38892
-{txt}{space 14} {c |}
-{space 2}hypothetical#{c |}
-{space 2}c.Envy_Level {c |}
-{space 12}1  {c |}{col 16}{res}{space 2} 3.804457{col 28}{space 2} 1.815469{col 39}{space 1}    2.10{col 48}{space 3}0.037{col 56}{space 4} .2238672{col 69}{space 3} 7.385047
-{txt}{space 14} {c |}
-{space 9}_cons {c |}{col 16}{res}{space 2} 6.783845{col 28}{space 2} 6.619516{col 39}{space 1}    1.02{col 48}{space 3}0.307{col 56}{space 4}-6.271612{col 69}{space 3}  19.8393
-{txt}{hline 15}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{txt}{hline 26}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}              WTP_Prevent{col 27}{c |} Coefficient{col 39}  Std. err.{col 51}      t{col 59}   P>|t|{col 67}     [95% con{col 80}f. interval]
+{hline 26}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 15}Envy_Level {c |}{col 27}{res}{space 2} .8554531{col 39}{space 2}  1.18987{col 50}{space 1}    0.72{col 59}{space 3}0.473{col 67}{space 4}-1.491289{col 80}{space 3} 3.202195
+{txt}{space 11}1.hypothetical {c |}{col 27}{res}{space 2} 4.797054{col 39}{space 2} 8.919617{col 50}{space 1}    0.54{col 59}{space 3}0.591{col 67}{space 4}-12.79482{col 80}{space 3} 22.38892
+{txt}{space 25} {c |}
+hypothetical#c.Envy_Level {c |}
+{space 23}1  {c |}{col 27}{res}{space 2} 3.804457{col 39}{space 2} 1.815469{col 50}{space 1}    2.10{col 59}{space 3}0.037{col 67}{space 4} .2238672{col 80}{space 3} 7.385047
+{txt}{space 25} {c |}
+{space 20}_cons {c |}{col 27}{res}{space 2} 6.783845{col 39}{space 2} 6.619516{col 50}{space 1}    1.02{col 59}{space 3}0.307{col 67}{space 4}-6.271612{col 80}{space 3}  19.8393
+{txt}{hline 26}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}{txt}
 {com}. reg WTP_Prevent c.Envy_Level##i.hypothetical WTP
 
@@ -662,19 +774,18 @@ Sorted by: {res}PROLIFIC_PID
 {txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.0765
 {txt}       Total {c |} {res} 336298.328       197  1707.09811   {txt}Root MSE        =   {res} 39.706
 
-{txt}{hline 15}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
-{col 1}   WTP_Prevent{col 16}{c |} Coefficient{col 28}  Std. err.{col 40}      t{col 48}   P>|t|{col 56}     [95% con{col 69}f. interval]
-{hline 15}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
-{space 4}Envy_Level {c |}{col 16}{res}{space 2} .8951902{col 28}{space 2}  1.19882{col 39}{space 1}    0.75{col 48}{space 3}0.456{col 56}{space 4}-1.469281{col 69}{space 3} 3.259661
-{txt}1.hypothetical {c |}{col 16}{res}{space 2} 4.871065{col 28}{space 2} 8.943105{col 39}{space 1}    0.54{col 48}{space 3}0.587{col 56}{space 4} -12.7677{col 69}{space 3} 22.50984
-{txt}{space 14} {c |}
-{space 2}hypothetical#{c |}
-{space 2}c.Envy_Level {c |}
-{space 12}1  {c |}{col 16}{res}{space 2} 3.796264{col 28}{space 2} 1.819837{col 39}{space 1}    2.09{col 48}{space 3}0.038{col 56}{space 4} .2069416{col 69}{space 3} 7.385586
-{txt}{space 14} {c |}
-{space 11}WTP {c |}{col 16}{res}{space 2}-.0085132{col 28}{space 2} .0260883{col 39}{space 1}   -0.33{col 48}{space 3}0.745{col 56}{space 4}-.0599681{col 69}{space 3} .0429416
-{txt}{space 9}_cons {c |}{col 16}{res}{space 2} 6.844659{col 28}{space 2}  6.63743{col 39}{space 1}    1.03{col 48}{space 3}0.304{col 56}{space 4}-6.246553{col 69}{space 3} 19.93587
-{txt}{hline 15}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{txt}{hline 26}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}              WTP_Prevent{col 27}{c |} Coefficient{col 39}  Std. err.{col 51}      t{col 59}   P>|t|{col 67}     [95% con{col 80}f. interval]
+{hline 26}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 15}Envy_Level {c |}{col 27}{res}{space 2} .8951902{col 39}{space 2}  1.19882{col 50}{space 1}    0.75{col 59}{space 3}0.456{col 67}{space 4}-1.469281{col 80}{space 3} 3.259661
+{txt}{space 11}1.hypothetical {c |}{col 27}{res}{space 2} 4.871065{col 39}{space 2} 8.943105{col 50}{space 1}    0.54{col 59}{space 3}0.587{col 67}{space 4} -12.7677{col 80}{space 3} 22.50984
+{txt}{space 25} {c |}
+hypothetical#c.Envy_Level {c |}
+{space 23}1  {c |}{col 27}{res}{space 2} 3.796264{col 39}{space 2} 1.819837{col 50}{space 1}    2.09{col 59}{space 3}0.038{col 67}{space 4} .2069416{col 80}{space 3} 7.385586
+{txt}{space 25} {c |}
+{space 22}WTP {c |}{col 27}{res}{space 2}-.0085132{col 39}{space 2} .0260883{col 50}{space 1}   -0.33{col 59}{space 3}0.745{col 67}{space 4}-.0599681{col 80}{space 3} .0429416
+{txt}{space 20}_cons {c |}{col 27}{res}{space 2} 6.844659{col 39}{space 2}  6.63743{col 50}{space 1}    1.03{col 59}{space 3}0.304{col 67}{space 4}-6.246553{col 80}{space 3} 19.93587
+{txt}{hline 26}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}{txt}
 {com}. 
 . ttest Envy_Level, by(hypothetical)
@@ -718,9 +829,9 @@ Combined {c |}{res}{col 12}    198{col 22} 18.66162{col 34} 2.936274{col 46} 41.
 {com}. 
 . log off
       {txt}name:  {res}<unnamed>
-       {txt}log:  {res}C:\Users\winkley\Documents\Alex Research\SocialComparison\Scripts\../Log Files/summarylog_envy_2.smcl
+       {txt}log:  {res}C:\Users\Myles\OneDrive\Documents\Alex Research\SocialComparison\Scripts\../Log Files/summarylog_envy_2.smcl
   {txt}log type:  {res}smcl
- {txt}paused on:  {res} 4 Oct 2024, 15:03:18
+ {txt}paused on:  {res} 5 Oct 2024, 22:31:41
 {txt}{.-}
 {smcl}
 {txt}{sf}{ul off}

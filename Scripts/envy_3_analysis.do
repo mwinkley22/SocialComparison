@@ -128,7 +128,7 @@ tempfile temp1
 
 save `temp1'
 
-import excel using "C:\Users\winkley\Documents\Alex Research\SocialComparison\Raw Excel Files\Envy+3+V2_October+3,+2024_20.37.xlsx", firstrow clear
+import excel using "..\Raw Excel Files\Envy+3+V2_October+3,+2024_20.37.xlsx", firstrow clear
 
 drop in 1
 
@@ -157,6 +157,12 @@ sum case_a_envy_1 case_b_envy_1 case_c_envy_1 case_d_envy_1 case_a_wtp_tr case_b
 gen case_a_b = case_a_wtp_tr-case_b_wtp_tr
 gen case_a_c = case_a_wtp_tr-case_c_wtp_tr
 gen case_a_d = case_a_wtp_tr-case_d_wtp_tr
+
+
+ttest case_a_b == 0
+ttest case_a_c == 0
+ttest case_a_d == 0
+
 
 ttest case_a_b==case_a_c, unpaired
 ttest case_a_b==case_a_d, unpaired
@@ -230,6 +236,14 @@ sum case_a_envy_1 case_c_envy_1 case_d_envy_1 case_a_wtp case_c_wtp case_d_wtp
 sum case_a_envy_1 case_c_envy_1 case_d_envy_1 case_a_wtp_tr case_c_wtp_tr case_d_wtp_tr
 
 reg general_wtp c.general_envy##i.case_c_tag i.case_c_tag##c.case_a_wtp
+
+
+
+gen case_a_c = case_a_wtp_tr-case_c_wtp_tr
+gen case_a_d = case_a_wtp_tr-case_d_wtp_tr
+
+ttest case_a_c==0
+ttest case_a_d==0
 
 
 log close
